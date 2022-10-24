@@ -41,7 +41,7 @@ if ( ! class_exists( 'Redux' ) ) {
 ```
 
 ### Redux::set_args()
-This method allows you set set [global args](global_arguments.md) for your instance of Redux. It's use is required for
+This method allows you set [global args](global_arguments.md) for your instance of Redux. It's use is required for
 virtually any Redux instance. An example of how to use it is below.
 
 ```php
