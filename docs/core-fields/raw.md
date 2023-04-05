@@ -41,7 +41,7 @@ export default {
 
 ## Example Config with Relative File
 ```php
-Redux::add_field( 'OPT_NAME', 'SECTION_ID', array(
+Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
     'id'           => 'opt-raw',
     'type'         => 'raw',
     'title'        => esc_html__('Raw output', 'your-textdomain-here'),
@@ -68,7 +68,7 @@ including line breaks!
 echo "Now i'm here"; 
 $output = ob_get_clean(); // Now everything is in our variable.
 
-Redux::add_field( 'OPT_NAME', 'SECTION_ID', array( 
+Redux::set_field( 'OPT_NAME', 'SECTION_ID', array( 
     'id'       => 'opt-raw',
     'type'     => 'raw',
     'title'    => esc_html__('Raw output', 'your-textdomain-here'),
