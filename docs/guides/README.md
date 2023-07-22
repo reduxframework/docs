@@ -1,5 +1,4 @@
----
-title: "Core Concepts" 
+MyFramework
 ---
 
 # Guides
