@@ -1,7 +1,3 @@
----
-title: "Core Concepts" 
----
-
 # Guides
 
 Below are guides to help you begin using Redux.  Whether you're new to Redux or looking for advanced guides, this is the 
