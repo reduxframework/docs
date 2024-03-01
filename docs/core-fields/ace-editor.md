@@ -2,7 +2,7 @@
 
 The ACE Editor field offers the ability to edit back-end code in an easy to use and easy to read embedded interface.  In 
 addition to matching the features of native code editors such as [Sublime Text](https://www.sublimetext.com/), 
-[Vim](http://www.vim.org) and [TextMate](http://macromates.com), ACE offers real-time checking for code accuracy.
+[Vim](http://www.vim.org), [CodeLobster](https://codelobster.com) and [TextMate](http://macromates.com), ACE offers real-time checking for code accuracy.
 
 <span style="display:block;text-align:center">![](./img/ace_editor.png)</span>
 
