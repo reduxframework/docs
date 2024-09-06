@@ -95,23 +95,23 @@ attached to the field by specifying `warning` or `error` in the return array.
 
 ## Built-in Validations
 
-|<div style="width:160px;">Key</div>|Description|
-|--|--|
-|`color`|Valid HTML hex color. Works with [color_rgba](../../core-fields/color-rgba.md) field (opacity)|
-|`comma_numeric`|Value is numeric separated by commas|
-|`css`|CSS|
-|`date`|Date|
-|`email`|Valid Email|
-|`html_custom`|HTML validation - See [html_custom example](validate.md#html_custom-example) |
-|`js`|JavaScript|
-|`no_html`|No HTML is permitted|
-|`no_special_chars`|Alpha Numeric, excluding special characters|
-|`not_empty`|If the value is empty|
-|`numeric`|Value is numeric|
-|`preg_replace`|Perform a replacement on the contents based on a regex pattern. You can test your regex patterns on a website like [phprex](https://phphub.net/regex/). See [preg_replace Example](validate.md#preg-replace-example)|
-|`str_replace`|Return a string after running through a `str_replace`. See [str_replace Example](validate.md#str-replace-example)|
-|`unique_slug`|To generate a unique slug - optional `'flush_permalinks' => true` argument can be added to force a flush permalinks on successful save|
-|`url`|Valid URL|
+|<div style="width:160px;">Key</div>| Description                                                                                                                                                                                                          |
+|--|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|`color`| Valid HTML hex color. Works with [color_rgba](../../core-fields/color-rgba.md) field (opacity)                                                                                                                       |
+|`comma_numeric`| Value is numeric separated by commas                                                                                                                                                                                 |
+|`css`| CSS                                                                                                                                                                                                                  |
+|`date`| Date                                                                                                                                                                                                                 |
+|`email`| Valid Email                                                                                                                                                                                                          |
+|`html_custom`| HTML validation - See [html_custom example](validate.md#html-custom-example)                                                                                                                                         |
+|`js`| JavaScript                                                                                                                                                                                                           |
+|`no_html`| No HTML is permitted                                                                                                                                                                                                 |
+|`no_special_chars`| Alpha Numeric, excluding special characters                                                                                                                                                                          |
+|`not_empty`| If the value is empty                                                                                                                                                                                                |
+|`numeric`| Value is numeric                                                                                                                                                                                                     |
+|`preg_replace`| Perform a replacement on the contents based on a regex pattern. You can test your regex patterns on a website like [phprex](https://phphub.net/regex/). See [preg_replace Example](validate.md#preg-replace-example) |
+|`str_replace`| Return a string after running through a `str_replace`. See [str_replace Example](validate.md#str-replace-example)                                                                                                    |
+|`unique_slug`| To generate a unique slug - optional `'flush_permalinks' => true` argument can be added to force a flush permalinks on successful save                                                                               |
+|`url`| Valid URL                                                                                                                                                                                                            |
 
 
 ### `preg_replace` Example
