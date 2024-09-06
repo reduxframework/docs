@@ -108,8 +108,8 @@ attached to the field by specifying `warning` or `error` in the return array.
 |`no_special_chars`|Alpha Numeric, excluding special characters|
 |`not_empty`|If the value is empty|
 |`numeric`|Value is numeric|
-|`preg_replace`|Perform a replacement on the contents based on a regex pattern. See [preg_replace Example](validate.md#preg_replace-example)|
-|`str_replace`|Return a string after running through a `str_replace`. See [str_replace Example](validate.md#str_replace-example)|
+|`preg_replace`|Perform a replacement on the contents based on a regex pattern. You can test your regex patterns on a website like [phprex](https://phphub.net/regex/). See [preg_replace Example](validate.md#preg-replace-example)|
+|`str_replace`|Return a string after running through a `str_replace`. See [str_replace Example](validate.md#str-replace-example)|
 |`unique_slug`|To generate a unique slug - optional `'flush_permalinks' => true` argument can be added to force a flush permalinks on successful save|
 |`url`|Valid URL|
 
