@@ -33,11 +33,11 @@ can be used will have the value applied.
 :::
 
 ## Supported Arguments
-|<div style="width:280px;">Name</div>|Type|Default|Description|
-|--- |--- |--- |--- |
-|`output_variables`|boolean|`false`|Can be set at the section or field object levels. When set to true, values will be appended to generated CSS.|
-|`ouput_variables_prefix`|string|`--`|Can be set at the global args, section, or field object levels.|
-|`compiler_ouput_variables_prefix`|string|`$`|For use with the compiler hook. An array of output variables is passed to the compiler hook.|
+| <div style="width:280px;">Name</div> |Type|Default|Description|
+|--------------------------------------|--- |--- |--- |
+| `output_variables`                   |boolean|`false`|Can be set at the section or field object levels. When set to true, values will be appended to generated CSS.|
+| `output_variables_prefix`            |string|`--`|Can be set at the global args, section, or field object levels.|
+| `compiler_output_variables_prefix`   |string|`$`|For use with the compiler hook. An array of output variables is passed to the compiler hook.|
 
 ## Using with CSS Variables
 
@@ -49,28 +49,27 @@ See the below [Example Generated CSS Variables](#example-generated-css-variables
 
 ## Using with the Compiler Hook
 ::: danger
-This is a dangerous approach since PHP based SCSS/LESS compilers are quite memory intensive. Users on shared hosting
+This is a dangerous approach since PHP-based SCSS/LESS compilers are very memory intensive. Users on shared hosting
 environments will have issues. It is STRONGLY advised to use CSS variables for greater stability.
 :::
 
-If you prefer to use a LESS/SCSS compiler you may want to use generated variables to prepend to your SCSS files. To
+If you prefer to use a LESS/SCSS compiler, you may want to use generated variables to prepend to your SCSS files. To
 enable this option, the Redux compiler hook will return an array of prepared variables. You may need to alter the prefix
 to match your compiler of choice.
 
 ### Changing the Compiler Variables Prefix
-By default, the global argument `compiler_ouput_variables_prefix` is set to `$` which works for SCSS. If you are using 
+By default, the global argument `compiler_output_variables_prefix` is set to `$` which works for SCSS. If you are using 
 LESS, you will need to run the following to properly generate your variables in a way that can be used by your compiler.
 By so doing, your variables will be properly prefixed with the `@` symbol which is what LESS requires.
 
 ```php
-Redux::set_args( 'YOUR_OPT_NAME', array( 'compiler_ouput_variables_prefix' => '@' ) );
+Redux::set_args( 'YOUR_OPT_NAME', array( 'compiler_output_variables_prefix' => '@' ) );
 ```
 
 
 ## Example Config
 
-For this example, we'll use the border field, found in the 
-<a href="https://github.com/ReduxFramework/redux-framework/blob/master/sample/sample-config.php">sample-config.php</a>. 
+For this example, we'll use the border field, found in the [sample-config.php](https://github.com/ReduxFramework/redux-framework/blob/master/sample/sample-config.php). 
 To pass only a CSS selector and have Redux generate the CSS, use the [output](output.md) argument instead.
 ```php
 array(
@@ -123,11 +122,11 @@ The second value is CSS `val()` function is the fallback value and is not requir
 ### Example Generated Compiler Variables
 
 ::: danger
-This is a dangerous approach since PHP based SCSS/LESS compilers are quite memory intensive. Users on shared hosting
+This is a dangerous approach since PHP-based SCSS/LESS compilers are quite memory intensive. Users on shared hosting
 environments will have issues. It is STRONGLY advised to use CSS variables for greater stability.
 :::
 
-Below is a full example of a compiler hook to generate your SCSS/LESS on save. The content of $output_variables will be
+Below is a full example of a compiler hook to generate your SCSS/LESS on save. The content of `$output_variables` will be
 populated with the following provided the above Example Config is used.
 
 ```php
@@ -140,7 +139,7 @@ array(
 ```
 
 ::: tip
-By default the global argument `compiler_ouput_variables_prefix` is set to work with SCSS. See 
+By default the global argument `compiler_output_variables_prefix` is set to work with SCSS. See 
 [Changing the Compiler Variables Prefix](#changing-the-compiler-variables-prefix) to change the prefix to your 
 compiler's requirements.
 :::
@@ -156,5 +155,5 @@ add_action( 'redux/options/YOUR_OPT_NAME/compiler', 'your_css_compiler', 10, 4 )
 ## Using `output_variables` with the [required](./required) Argument
 
 If a field is not "visible" due to an unmet [required](./required) statement, the generated CSS variables for fields in 
-this state will not be appended to the page. By so doing the output is easier to manage. Be mindful of this when using 
+this state will not be appended to the page. By doing so, the output is easier to manage. Be mindful of this when using 
 these two arguments together.

@@ -25,7 +25,7 @@ array(
 
 ### Multiple Validations
 
-You can also have multiple validations occur on a given field by setting an array of validations. The validations will
+Multiple validations may occur on a given field by setting an array of validations. The validations will
 occur in the order as they appear in the array. An example of this is below.
 ```php
 array(
@@ -33,12 +33,12 @@ array(
 )
 ```
 
-Be warned, not all validations may chain together. Be careful and make sure you are passing any additional arugments needed.
+Not all validations may chain together. Be careful to ensure you're passing any necessary additional arugments.
 
 
 ### Using a Custom Validation
 
-You can declare your own custom validation by providing a callback function. An example of this can be seen below.
+You can declare your own custom validation by providing a callback function as shown below.
 
 ```php
 array(
@@ -46,7 +46,7 @@ array(
 )
 ```
 
-The function you set can do anything. Here is an example:
+The function you add could do anything. Here is an example:
 ```php
 if ( ! function_exists( 'test_custom_callback' ) ) {
 	/**
@@ -89,7 +89,7 @@ if ( ! function_exists( 'test_custom_callback' ) ) {
 ```
 
 ::: tip
-Anything you pass back in the return object `$return['value']` will be saved. You can display a warning or an error
+Anything passed back in the return object `$return['value']` will be saved. Display a warning or an error
 attached to the field by specifying `warning` or `error` in the return array.
 :::
 

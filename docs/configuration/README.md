@@ -1,7 +1,7 @@
 # Configuration
 
-Redux can be quite overwhelming. There are so many features which reach to all areas of WordPress. This area will help you
-to understand more complex configurations and how to use them.
+Redux can be overwhelming. There are a multitude of features that reach all areas of WordPress. This section will help you
+understand more complex configurations and how to use them.
 
 ::: tip Good Starting Points
 - [The Redux API](api.md)

@@ -7,23 +7,23 @@ sidebarDepth: 1
 
 # Using the `hints/hint` Argument
 
-Hints may be used within [fields](../objects/field.md), displaying a small question mark icon after (or before) the field title.
+Hints could be used within [fields](../objects/field.md), displaying a small question mark icon after (or before) the field title.
 
 <span style="display:block;text-align:center">![](../img/hints.png)</span>
 
-See the little question mark icon above? When a user moves their mouse over the icon (or clicks in, optionally), a tooltip will display with additional information you provide. How do it all work? Please continue reading.
+Note the question mark icon in the image above. When a user moves their mouse over the icon (or clicks in, optionally), a tooltip will display with additional information you provide.
 
 ::: warning Table of Contents
 [[toc]]
 :::
 
 ## A little housework
-There are some settings you must specify in the `setArguments` section of the `sample-config.php` file (or whatever you have chosen to name your config file). The `hints` array. Should these not be specified, Redux will use the default settings (explain below). The hints array contains several settings, and a few setting arrays so that the hints feature may be customized as desired. Each will be explained as we go.
+There are some settings you must specify in the global arguments array of the [`sample-config.php`](https://github.com/reduxframework/redux-framework/blob/master/sample/sample-config.php) file (or whatever you have chosen to name your config file). The `hints` array. Should these not be specified, Redux will use the default settings (explain below). The hints array contains several settings, and a few setting arrays so that the hints feature may be customized as desired.
 
 Here is what the default settings inside your global arguments array would look like:
 
 ```php
-$this->args = array(
+$args = array(
     // ... (list of other arguments in the args array)
 
     // HINTS
@@ -56,9 +56,11 @@ $this->args = array(
         ),
     ),
 );
+
+Redux::set_args( $opt_name, $args );
 ```
 
-I know that code must seem a little intimidating, but really, it is not. We'll start at the top.
+We understand the code might seem a little intimidating. Really, it's not. We'll start at the top.
 
 ::: danger
 These settings are **global**, which means they will apply to all tool-tips on any given panel.
@@ -129,7 +131,7 @@ other argument.
 
 ### Using Hints with Text Boxes
 In addition to using hints to add additional information to the [field](../objects/field.md) itself, hints may also be used to pop up a tool-tip 
-when a user clicks on a text box. Enabling this feature is also as easy as adding a single array based argument to the 
+when a user clicks on a text box. Enabling this feature is also as easy as adding a single array-based argument to the 
 text field.
 
 ```php

@@ -20,7 +20,7 @@ footer: GPLv2 Licensed | Copyright © 2014-Today by Redux
   <div class="feature">
   
 ## Built for Developers
-Redux was built by developers for developers. We save you months, if not years in your development time. Everything we
+Redux was built by developers for developers. We save you months if not years in your development time. Everything we
 do is to help innovation in the industry. To help you get started, we have a number of docs you should read.
 
 [See: Guides](./guides/)
@@ -29,7 +29,7 @@ do is to help innovation in the industry. To help you get started, we have a num
   <div class="feature">
 
 ## Built for Users
-We built this framework to help users and fix a problem in the industry. We care deeply about every user of Redux out there.
+We built this framework to help users and fix a problem in the industry. We care deeply about every Redux user.
 We will always ensure your site is the most secure. If you find an issue, please report it to us.
 
 [See: Getting Help/Support](guides/basics/support-defined.md)

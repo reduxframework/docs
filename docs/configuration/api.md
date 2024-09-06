@@ -32,7 +32,7 @@ is so crucial. It must be unique, and it is the first variable for the methods w
 
 For safety reasons, and to ensure Redux has loaded properly, it's advised to put an if statement before you use the API
 in case Redux has not been loaded yet.
-code. 
+Code. 
 
 ```php
 if ( ! class_exists( 'Redux' ) ) {
@@ -41,8 +41,8 @@ if ( ! class_exists( 'Redux' ) ) {
 ```
 
 ### Redux::set_args()
-This method allows you set [global args](global_arguments.md) for your instance of Redux. Its use is required for
-virtually any Redux instance. An example of how to use it is below.
+This sets [global args](global_arguments.md) for the Redux instance. Its use is required for
+virtually any Redux instance. An example of its use is below.
 
 ```php
 $opt_name = 'YOUR_OPT_NAME';
@@ -57,7 +57,7 @@ Redux::set_args( $opt_name, $args );
 
 ### Redux::get_args()
 
-This method can take one or two parameters depending on the desired output.
+This method takes one or two parameters depending on the desired output.
 
 #### Fetch All Arguments
 
@@ -68,12 +68,12 @@ $args = Redux::get_args( $opt_name );
 
 #### Fetch a Single Argument
 
-If a key is provided, and that value is set, the single value will be returned, otherwise null is returned.
+If a key is provided, and the value is set, the single value will be returned; otherwise null is returned.
 
 ```php
 echo Redux::get_arg( $opt_name, 'opt_name' );
 ```
-The above value will return a text value that will equal the [opt_name](global_arguments.md#opt-name) string value.
+The above value returns a text value of the [opt_name](global_arguments.md#opt-name) string value.
 
 ### Redux::set_help_tab()
 
@@ -121,8 +121,8 @@ For full examples of how to use the Redux API with extensions, see the [using ex
 
 ### Redux::init()
 
-This method forces Redux to load at that instance instead of waiting for the init hook as is default with Redux. This is
-useful if you want to be able to use your Redux values instantly. Beware, doing so too early can cause issues especially
+This method forces Redux to load at that instant instead of waiting for the init hook as is default with Redux. This is
+useful for instantly setting Redux values. Beware, doing so too early might cause issues, especially
 with extensions like metaboxes.
 
 ```php
@@ -132,8 +132,8 @@ Redux::init( $opt_name );
 
 ### Disable Demo Mode Notice
 
-When the Redux **plugin** is activated a `Activate Demo Mode` admin notice is displayed allowing users to try the Redux sample
-config file. Calling this method will disable that from happening.
+When the Redux **plugin** is activated, an `Activate Demo Mode` admin notice will display, allowing users to try the Redux sample
+config. Calling this method will disable that feature.
 
 ```php
 Redux::disable_demo();
@@ -187,8 +187,8 @@ td:first-child { white-space: nowrap; }
 
 ### Deprecated Methods
 
-A number of these methods were deprecated with Redux 4.x due to naming standards. Shims still exist for all of them, but
-a deprecation notice will be provided if used and in [dev_mode](global_arguments.md#dev_mode).
+A number of these methods were deprecated with Redux 4.x due to naming standards. Shims still exist for them all. 
+However, a deprecation notice will be provided if used.
 
 |Method|Description|
 |--|--|

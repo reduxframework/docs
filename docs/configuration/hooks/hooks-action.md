@@ -4,9 +4,8 @@ title: "Action Hooks"
 
 # Action Hooks
 
-The follow table is a list of available filter hooks within Redux that developers may use in their own code.  Please 
-note, a solid understand of [PHP](https://secure.php.net/docs.php) and [WordPress action hooks](https://codex.wordpress.org/Function_Reference/add_action) 
-are required.
+The following table is a list of available filter hooks within Redux developers may use in their own code. Please 
+note, a solid understanding of [PHP](https://secure.php.net/docs.php) and [WordPress action hooks](https://codex.wordpress.org/Function_Reference/add_action) are required.
 
 As always, please be sure to replace `{opt_name}` with the opt_name string of your Redux instance.
 

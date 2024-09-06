@@ -5,10 +5,8 @@ sidebarDepth: 2
 
 # Using the `data` Argument
 
-The `data` argument allows Redux to populate the [field](../objects/field.md) using dynamic queries for things 
-like posts, pages, menus, categories, terms, etc. It automatically uses the correct WordPress function to retrieve each 
-type of data. Most types of data accept an 'args' value, which will be passed to the WordPress function to control 
-what data is retrieved.
+The `data` argument allows Redux to populate the [field](../objects/field.md) using dynamic queries for posts, pages, menus, categories, terms, etc. It automatically uses WordPress APIs to retrieve each 
+type of data. Most data types accept an 'args' value, which is passed to the WordPress function to control the retrieved data.
 
 ::: warning Table of Contents
 [[toc]]
@@ -73,7 +71,7 @@ $fields = array(
 ```
 
 ### Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../global_arguments.md#opt_name) argument.
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;

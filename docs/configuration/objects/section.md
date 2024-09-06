@@ -35,7 +35,7 @@ API methods are provided to set, manipulate, and remove sections before they are
 
 ## Setting Section(s)
 
-There are two methods to set a section in Redux. The only difference between these two declarations is one is singular
+There are two methods to set a section. The only difference between the two declarations is one is singular
 while the other is plural.
 
 ### Redux::set_section()
@@ -71,9 +71,9 @@ To reduce errors, if a section already exists with that ID, a new one will be ge
 
 #### Updating an existing section
 
-If you wish, you can change the default behavior and replace an existing section by passing a new section array with a
-same section_id, and then passing true for the replacement variable. All data between the two sections will be merged. i.e.,
-you can only update values this way. If you wish to remove values, you will need to use remove_section outlined below.
+It's possible to change the default behavior and replace an existing section by passing a new section array with a
+same section_id, and then passing true for the replacement variable. All data between the two sections will be merged. For example,
+you can only update values this way. To remove values, using `remove_section`, outlined below, is required.
 
 ```php
 Redux::set_section( 
@@ -105,8 +105,8 @@ Similar to [::set_section()](#set-section), but used to set an unlimited number 
 |`opt_name`|string|Your unique [opt_name](../global_arguments.md#opt-name)|
 |sections|array|Array of section arrays|
 
-This method allows for multiple sections to be added at once. Keep in mind that you can still set a single section, as
-seen below, but you should remember to wrap the section in an array.
+This method allows for multiple sections to be added at once. Bear in mind, a single section may still be set, as shown below.
+Always remember to wrap the section in an array.
 
 ```php
 Redux::set_sections( 
@@ -131,13 +131,12 @@ Redux::set_sections(
 
 ## Section Helper Functions
 
-A number of helper functions have been baked into the Redux API to support modifying a section before it gets rendered.
-These functions have specific use cases and are not often employed by the typical developer, but they are useful when
-needed.
+A number of helper functions are included in the Redux API to support modifying a section before it's rendered.
+These functions have specific use cases and are seldom employed by the typical developer. They're useful when needed.
 
 ::: tip
-Execution order is important here. If you try to fetch a section before it has been called within your code, it will
-not exist. If you believe a section should exist, make sure you're not in an early loading hook when working with that section.
+Execution order is important here. Fetching a section before it's been called within your code will fail. 
+If you believe a section should exist, ensure you're not in an early loading hook when working with that section.
 :::
 
 
@@ -149,17 +148,14 @@ not exist. If you believe a section should exist, make sure you're not in an ear
 |`opt_name`|string|Your unique [opt_name](../global_arguments.md#opt-name)|
 |`section_id`|string|Unique id of the section you wish to retrieve|
 
-Say you want to fetch a section object, you can easily do that. This may be useful if you wanted to check the section 
+Fetching a section object is easily achieved. This may be useful for checking the section 
 array by ID. Returns `false` if the section cannot be identified.
 
 ```php
 $section = Redux::get_section( 'OPT_NAME', 'SECTION_ID' );
 ```
-
-
-
 ### Redux::get_sections()
-Now let's say you want to grab all sections for a given opt_name, you can do that too.
+Let's say you want to grab all sections for a given opt_name, you can do that too.
 
 *Arguments to pass in order of declaration:*
 |Name|Type|Description|
@@ -179,11 +175,10 @@ $sections = Redux::get_sections( 'OPT_NAME' );
 |`section_id`|string||Unique id of the section you wish to retrieve|
 |`delete_fields`|bool|`false`|If set to true, all fields below will be deleted as well|
 
-This method allows you to remove a section by ID from Redux. It can be useful to update a field as follows:
+This method allows removal of a section by ID.
 
 ```php
 $section = Redux::get_section( 'OPT_NAME', 'SECTION_ID' );
 $section['title'] = esc_html__( 'A New Section Title', 'your-textdomain-here' );
 Redux::set_section( 'OPT_NAME', $section );
 ```
-

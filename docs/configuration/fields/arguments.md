@@ -4,7 +4,7 @@ sidebarDepth: 2
 ---
 
 # Global Field Arguments
-The following are the universal arguments used by every field. The default field arguments can be used by any field. The
+The following are universal arguments used by every field. The default field arguments can be used by any field. The
 extra functionality arguments may perform in different ways depending on the field type.  
 
 ## Universal Arguments

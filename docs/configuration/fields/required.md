@@ -4,9 +4,9 @@ title: "Required"
 
 # Using the `required` Argument
 
-Fields may be linked/required/folded according to a/multiple parent value(s). This is accomplished by appending a 
+Fields may be linked/required/folded according to a/multiple parent value(s). This is achieved by appending a 
 `required` argument to the [field](../objects/field.md). Required can be very powerful, but due to the complexity requires 
-some careful consideration when using.
+some careful considerations.
 
 ::: warning Table of Contents
 [[toc]]
