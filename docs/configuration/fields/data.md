@@ -71,7 +71,7 @@ $fields = array(
 ```
 
 ### Example Usage
-This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../global_arguments.md#opt_name) argument.
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../global_arguments.md#opt-name) argument.
 
 ```php
 global $redux_demo;

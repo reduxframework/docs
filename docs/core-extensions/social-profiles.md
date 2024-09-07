@@ -6,14 +6,6 @@ The Redux Social Profiles extension easily allows one to create and display link
 [[toc]]
 :::
 
-::: tip Getting Started
-Please be aware that a working 
- knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
-:::
-
 ## Arguments
 |Name|Type| Default                                                                          |Description|
 |--- |--- |----------------------------------------------------------------------------------|--- |
@@ -190,7 +182,10 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 
 ## Example Usage
 ### Code
-The extension's return value is an array of key/pair values. The key contains the profile's index key, while the value contains the array of the profiles arguments. It will be necessary to use a for/each loop to extract the values (Please remember to replace `redux_demo` with your own `opt_name` argument).  The following code returns only the saved values.  For this example to have any real value, you'll need to write the appropriate HTML, or use one of the helper functions below.
+The extension's return value is an array of key/pair values. The key contains the profile's index key, while the value contains the array of the
+profiles arguments. It will be necessary to use a for/each loop to extract the values (Please remember to replace `redux_demo` with your own `opt_name` 
+argument).  The following code returns only the saved values.  For this example to have any real value, you'll need to write the appropriate HTML, 
+or use one of the helper functions below.
 
 ```php
 global $redux_demo;
@@ -224,7 +219,7 @@ foreach ( $redux_demo['opt-social-profiles'] as $idx => $arr ) {
 The Social Profiles extension includes two helper functions.
 
 ### redux_render_icon_from_id()
-This function, based on the echo parameter will either echo a fully rendered icon, or return the HTML for use with your 
+This function, based on the echo parameter, will either echo a fully rendered icon or return the HTML for use with your 
 own rendering purposes.
 
 **Function Parameters in Order**

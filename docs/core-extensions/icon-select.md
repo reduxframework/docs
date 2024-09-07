@@ -1,7 +1,10 @@
 # Icon Select <Badge text="field" type="warn"/>
 
-The entire purpose of the Icon Select field is to reduce time as a developer by feeding a web font CSS file via a URL and having it automatically parse the font class names. If required, specify a font prefix, and Icon Select will also auto-append it.
-Ultimately, a fully functional class is output within the HTML of the theme. Icon Select will also enqueue the specified CSS file in the admin and/or front end.
+The entire purpose of the Icon Select field is to reduce time as a developer by feeding a web font CSS file via a URL and having it automatically parse 
+the font class names. If required, specify a font prefix, and Icon Select will also auto-append it.
+
+Ultimately, a fully functional class is output within the HTML of the theme. Icon Select will also enqueue the specified CSS file in the admin and/or 
+front end.
 
 <span style="display:block;text-align:center">![](./img/icon-select.jpg)</span>
 
@@ -9,15 +12,10 @@ Ultimately, a fully functional class is output within the HTML of the theme. Ico
 [[toc]]
 :::
 
-::: tip Getting Started
-To understand how to use extensions, read this article on [Using Extensions](../guides/basics/using-extensions.md).
-Please understand that a working knowledge of PHP and CSS is required to use this extension properly. Should you not be familiar with one or the other (or both), please refer to the following guides to get you started:
-[Getting Started with PHP](http://www.php.net/manual/en/tutorial.php),  
-[CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
-:::
-
 ## Arguments
-By default, if you do not specify any particular arguments, Icon Select will load the FontAwesome, Elusive, and Dashicons sets already included with Redux and WordPress. It will also enqueue this font in the front end, so you can begin working with icons instantly. Alternatively, you can also provide any of the arguments below for a more customized experience.
+By default, if you do not specify any particular arguments, Icon Select will load the FontAwesome, Elusive, and Dashicons sets already included with 
+Redux and WordPress. It will also enqueue this font in the front end, so you can begin working with icons instantly. Alternatively, you can also
+provide any of the arguments below for a more customized experience.
 
 | Name             | Type   | Default       | Description                                                                                                                                                                                |
 |------------------|--------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,7 +41,7 @@ By default, if you do not specify any particular arguments, Icon Select will loa
 :::
 
 ## Stylesheet Options
-We've included four example in the Redux sample config and is show below. You are also free to use the examples in your project.
+We've included four examples in the Redux sample config and is shown below. You are also free to use the examples in your project.
 
 | Name    | Type   | Default       | Description                                                                                                                                                                                                                                                                                                                                                                                                         |
 |---------|--------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -103,7 +101,7 @@ Redux::set_field(
 ```
 
 ### Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in 
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in 
 your [opt_name](../configuration/global_arguments.md#opt-name) argument.
 
 ```php

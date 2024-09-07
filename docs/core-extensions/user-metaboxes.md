@@ -1,17 +1,11 @@
 # User Metaboxes <Badge text="enhancement" type="warn"/>
 
-If you are used the ReduxFramework declaration arrays, you know Redux User Metaboxes. They're one and the same! The only difference is a parent array. We'll go through a few examples to get you up and running. Please know, you MUST have a Redux global options page for user metaboxes taxonomy to work. They're interconnected. You can, however, make a fake options panel, and hide it from the admin menu. 
+If you are accostomed to the Redux Framework declaration arrays, you know Redux User Metaboxes. They're one and the same! The only difference is a 
+parent array. We'll go through a few examples to get you up and running. Please know, you MUST have a Redux global options page for user metaboxes 
+taxonomy to work. They're interconnected. You can, however, make a fake options panel and hide it from the admin menu. 
 
 ::: warning Table of Contents
 [[toc]]
-:::
-
-::: tip Getting Started
-To understand how to use extensions, you should read this article on [Using Extensions](../guides/basics/using-extensions.md).
- Please be aware that a working knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
 :::
 
 ## Arguments
@@ -100,7 +94,7 @@ Redux_Users::set_profile(
 
 ## Example Usage
 Getting the data from a user profile metabox is as simple as using regular WordPress, and the `get_user_meta()` function. 
-However, to keep things slim, Redux_Users never saves defaults to the database. If you want the default values, you 
+However, to keep things slim, Redux_Users never saves the default values to the database. If you want the default values, you 
 need to use our custom function.
 
 ```php

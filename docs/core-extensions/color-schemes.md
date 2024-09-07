@@ -1,11 +1,11 @@
 # Color Schemes <Badge text="field" type="warn"/>
 
 The Redux Color Schemes extension is a new way to take control over the color layout of your theme. Instead of using 
-individual color pickers to design the color layout of your theme, set them all up in one simple, easy-to-use field!   
+individual color pickers to design the color layout of your theme, set them all up in one simple, easy-to-use field! 
+
 In addition to choosing any color, this extension also offers a per color alpha channel, the option to select no color, 
-and the ability to save and recall entire user designed color schemes. This comes in handy should you wish to give your 
-users the ability to change theme colors for various holiday or special occasions... or even if they want shake things up 
-sometimes.
+and the ability to save and recall entire user designed color schemes. This comes in handy should you wish to allow your 
+users to change theme colors for various holidays or special occasions... or even if they want to occasionally shake things up.
 
 <span style="display:block;text-align:center">![](./img/color_schemes.png)</span>
 
@@ -13,17 +13,8 @@ sometimes.
 [[toc]]
 :::
 
-::: tip Getting Started
-To understand how to use extensions, you should read this article on [Using Extensions](../guides/basics/using-extensions.md).
- To shortcut the process, you can use the [Redux Build](http://build.redux.io/) site. Please be aware that a working 
- knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
-:::
-
 ## Arguments
-Array of individual arrays that set the individual color pickers.  See 'Creating a Color Scheme Layout' below.
+Array of individual arrays that set the individual color pickers. See 'Creating a Color Scheme Layout' below.
 
 |Name|Type|Default|Description|
 |--- |--- |--- |--- |
@@ -33,14 +24,14 @@ Array of individual arrays that set the individual color pickers.  See 'Creatin
 |subtitle|string||Subtitle display of the field, situated beneath the title.|
 |desc|string||Description of the field, appearing beneath the field control.|
 |class|string||Appends any number of classes to the field's class attribute.|
-|compiler|bool|`false`|Flag to run the compiler hook or array.  With this extension, the value only need be true or false.  See 'Outputting the Color Values' below.|
-|output|bool|`false`|Flag to output dynamically generate CSS.  With this extension, the value only need be true or false.  See 'Outputting the Color Values' below.|
-|options|array||Array of options that sets the behavior of the color picker.  See `Color Picker Options` below.|
+|compiler|bool|`false`|Flag to run the compiler hook or array. With this extension, the value only need be true or false. See 'Outputting the Color Values' below.|
+|output|bool|`false`|Flag to output dynamically generate CSS. With this extension, the value only need be true or false. See 'Outputting the Color Values' below.|
+|options|array||Array of options that sets the behavior of the color picker. See `Color Picker Options` below.|
 |output_transparent|bool|`false`|Flag that sets whether or not a blank color outputs as an empty space or as the string `transparent`.|
-|no_compiler_output|bool|`false`|Flag that determines whether or not CSS will be outwith with the compiler flag set to `true`.  Useful when only desiring to fire the compiler without any output.|
+|no_compiler_output|bool|`false`|Flag that determines whether or not CSS will be outwith with the compiler flag set to `true`. Useful when only desiring to fire the compiler without any output.|
 |groups|array||Array of color group categories to which color pickers will be grouped. See 'Creating Color Groupings' below.|
 |accordion|bool|`true`|Flag to set the accordion folding for color groups.|
-|simple|bool|`false`|Flag to set the display of the scheme saving options.  See 'Using Schemes' below.|
+|simple|bool|`false`|Flag to set the display of the scheme saving options. See 'Using Schemes' below.|
 |hint|array||Array containing the `content` and optional `title` arguments for the hint tooltip. More info|
 
 ::: tip Also See
@@ -67,23 +58,23 @@ Array of individual arrays that set the individual color pickers.  See 'Creatin
 |choose_text|string|'Choose'|String to display for the color picker Choose button.|
 |cancel_text|string|'Cancel'|String to display for the color picker Cancel button.|
 |show_buttons|bool|`true`|Flag that sets the display of the Choose and Cancel buttons.|
-|use_extended_classes|bool|`false`|Flag enabled the use of CSS Container and Replacer classes.  See 'Extended Classes' below.|
-|palette|array||Individual arrays color values.  See 'Color Palettes' below.|
+|use_extended_classes|bool|`false`|Flag enabled the use of CSS Container and Replacer classes. See 'Extended Classes' below.|
+|palette|array||Individual arrays color values. See 'Color Palettes' below.|
 
 
-## Creating a Color Groupings
-To sort color pickers into a particular groups, we must first define the group categories as an array in the `groups` argument.  Groups are set as key/pairs.  The key represents the group name.  The value is an array where the following settings may be applied:
+## Creating Color Groupings
+To sort color pickers into a particular groups, we must first define the group categories as an array in the `groups` argument. Groups are set as key/pairs. The key represents the group name. The value is an array where the following settings may be applied:
 
 |Name|Type|Default|Description|
 |--- |--- |--- |--- |
-|desc|string||Optional.  The description to display beneath the color grouping's name.|
-|hidden|bool|`false`|Optional.  Flag setting the visibility of the color grouping.  This is useful in event you'd like to hide certain group under certain circumstances while retaining the color data in the database.|
-|accordion_open|bool|`false`|Optional.  Flag to set whether or not the group's accordion is open or closed by default.|
+|desc|string||Optional. The description to display beneath the color grouping's name.|
+|hidden|bool|`false`|Optional. Flag setting the visibility of the color grouping. This is useful in event you'd like to hide certain group under certain circumstances while retaining the color data in the database.|
+|accordion_open|bool|`false`|Optional. Flag to set whether or not the group's accordion is open or closed by default.|
 
 
 Alternatively, set the value of the group key/pair to a string to indicate the description. In doing so, the `hidden` and `accordion_open` will be set to their default values. See the example below.
 
-Once the groups array is set, the group name will be used to pass as an argument into the color selector (explained below).
+Once the group array is set, the group name will be used to pass as an argument into the color selector (explained below).
 
 The following example demonstrates how to create three different group categories in which color pickers may be assigned to.
 
@@ -106,7 +97,7 @@ Three different group categories have been specified. The fourth key/pair above 
 
 ## Changing the Accordion Icons
 
-Should you wish to use different icons for the group accordions, the may be changed via filter hooks.  Please remember to substitute <opt_name> with the opt_name string of your project.  See the example below.
+Should you wish to use different icons for the group accordions, they may be changed via filter hooks. Please remember to substitute <opt_name> with the opt_name string of your project. See the example below.
 
 The open icon filter tag is: `'redux/extension/color_scheme/' . <opt_name> . '/icon/open'`
 The close icon filter tag is: `'redux/extension/color_scheme/' . <opt_name> . '/icon/close'`
@@ -141,23 +132,23 @@ function redux_change_close_icon($value) {
 
 ## Creating a Color Scheme Layout
 
-The beauty of the color schemes field is the ability to assign a color to basically any CSS selector that accepts a color value.  It's ideal to create your CSS layout first, to determine initial CSS classes, IDs, selectors, and values used throughout your theme.  Once that has been accomplished, it's as easy as assigning them to an individual color selector.
+The beauty of the color schemes field is the ability to assign a color to basically any CSS selector that accepts a color value. It's ideal to create your CSS layout first, to determine initial CSS classes, IDs, selectors, and values used throughout your theme. Once that has been achieved, it's as easy as assigning them to an individual color selector.
 
-Let's examine the arguments for each color selector first.  These arrays are placed inside the `default` argument of the color scheme field array.
+Let's examine the arguments for each color selector first. These arrays are placed inside the `default` argument of the color scheme field array.
 
 |Name|Type|Default|Description|
 |--- |--- |--- |--- |
-|id|string||Unique ID for the color selector.  This must be different from other color selector IDs.|
+|id|string||Unique ID for the color selector. This must be different from other color selector IDs.|
 |title|string||The text that will appear below the color selector.|
 |color|string||Hex string of the default color for the color selector.|
-|alpha|float|1|Float value of the default alpha value.  Value must be a decimal value between `0` and `1`.|
+|alpha|float|1|Float value of the default alpha value. Value must be a decimal value between `0` and `1`.|
 |selector|string||CSS class or ID to which the color will be used with.|
 |mode|string|'color'|CSS mode in which the color is assigned to.|
 |important|bool|`false`|Flag to set the CSS `!important` value.|
-|group|string||String of a group name set in the group array.  If left blank, or using the name of a group that does not exist, the color picker will appear in a nameless group.|
+|group|string||String of a group name set in the group array. If left blank, or using the name of a group that does not exist, the color picker will appear in a nameless group.|
 
 
-A very basic default example would look like this:
+A basic default example would look like this:
 ```php
 array(
     'id'            => 'opt-color-scheme',
@@ -192,7 +183,7 @@ array(
 );    
 ```
 
-Note that we've assigned these selectors to the 'Body' group.  These selectors will be rendered underneath the group with the Body label.  If the `group` argument is omitted, the color selectors will appear in a group without a name.
+Note that we've assigned these selectors to the 'Body' group. These selectors will be rendered underneath the group with the Body label. If the `group` argument is omitted, the color selectors will appear in a group without a name.
 
 This example assumes your CSS file contains a declaration for `body` and said declaration has been properly coded into your theme.
 
@@ -207,7 +198,7 @@ As you can see, each color selector's `selector` argument is assigned to `body`,
 
 ## Outputting the Color Values
 
-Now it's time to determine how to output the colors your users will choose and save. There are three ways to accomplish this. The first is to use the Redux options array variable followed by the color selector id, just as you might for any other Redux field. Using the example above, outputting the body color and background color would go as follows (Please remember to replace `redux_demo` with your own `<a href="/redux-framework/arguments/opt_name" title="opt_name">opt_name</a>` argument):
+Now it's time to determine how to output the colors your users will choose and save. There are three ways to achieve this. The first is to use the Redux options array variable followed by the color selector id, just as you might for any other Redux field. Using the example above, outputting the body color and background color would go as follows (Please remember to replace `redux_demo` with your own [`opt_name`](/redux-framework/arguments/opt_name) argument):
 
 ```php
 global $redux_demo;
@@ -245,48 +236,65 @@ echo 'body group: '     . $redux_demo['opt-color-scheme']['body-text']['group'];
 
 ```
 
-While this is the most basic method, it can also become quite cumbersome should such calls need to be used multiple times throughout your theme. The second way, a more efficient way is to set the `output` argument to true. Unlike the core Redux fields, this extension does not require the passing of any CSS selectors. All you need do is set the argument to true and the full CSS of selectors, elements, and values will be dynamically outputted within your theme's HTML.
+While this is the most basic method, it can also become cumbersome should such calls need to be used multiple times throughout your theme. The second way, a more efficient way is to set the `output` argument to true. Unlike the core Redux fields, this extension does not require the passing of any CSS selectors. All you need to do is set the argument to true, and the full CSS of selectors, elements, and values will be dynamically outputted within your theme's HTML.
 
-The final method is to use the <a href="/redux-framework/advanced/updating-a-css-file-dynamically" title="Updating a CSS File Dynamically">CSS compiler</a> included with the Redux Framework. Again, the core Redux fields normally accept an array of CSS selectors to send to the compiler. This extension requires you only set the `compiler` argument to true. It will take care of the rest, delivering all the field's selector values, elements, and values in one string. What you do with that data via the compiler is up to you.
+The final method is to use the [CSS compiler](/redux-framework/advanced/updating-a-css-file-dynamically) included with the Redux Framework. Again, the core Redux fields normally accept an array of CSS selectors to send to the compiler. This extension requires you to only set the `compiler` argument to true. It will take care of the rest, delivering all the field's selector values, elements, and values in one string. What you do with that data via the compiler is up to you.
 
 ## Using Schemes
-The color scheme extension may be displayed in two different modes: Default mode which displays controls for saving, deleting, importing and exporting schemes, or simple mode which displays an array of color blocks and nothing else. The following five features are only applicable when not using simple mode. In simple mode, the user will be unable to save, delete, import or export schemes.
+The color scheme extension may be displayed in two different modes: Default mode, which displays controls for saving, deleting, importing and exporting schemes, or simple mode which displays an array of color blocks and nothing else. The following five features are only applicable when not using simple mode. In simple mode, the user will be unable to save, delete, import or export schemes.
 
 Please feel free to copy (and/or edit) these instructions for inclusion with your scheme documentation, so your users understand how the features work. We openly support the proper operation of the extension for the theme developer, but end users of your theme who contact us for 'how to' information will be directed to this page, or back to your support staff.
 
 ### Selecting Schemes
-On first load, the color scheme extension installs the default theme based on the defaults settings set up in the default array of the color scheme field array. The default scheme is permanent and cannot be deleted, although changes can be made to it and saved with different values. Resetting the section or resetting all via the Redux options panel will reset any changes to your default settings.
+On first load, the color scheme extension installs the default theme based on the default settings set up in the default array of the color scheme field array. The default scheme is permanent and cannot be deleted, although changes can be made to it and saved with different values. Resetting the section or resetting all via the Redux options panel will reset any changes to your default settings.
 
-Once new scheme layouts have been saved, they may be selected via the drop-down select box. You must click <i>Save Changes</i> before the newly selected scheme will be available for use within your theme.
+Once new scheme layouts have been saved, they may be selected via the drop-down select box. You must click _Save Changes_ before the newly selected scheme will be available for use within your theme.
 
 ::: warning NOTE
 Should you decide to make changes to your defaults in the color scheme field array, those changes will not be visible until the color scheme field is reset.
 :::
 
 ### Adding Schemes
-The easiest way to create a new scheme layout is to make any desired color changes to the default scheme, provide a new scheme name in the Name text box, then click <i>Add</i>. This will commit the new scheme to the database without affecting the color selection in the default scheme. Please bear in mind, even though the new scheme is selected in the drop-down selector, it will not be applied to the theme until <i>Save Changes</i> is clicked.
+The easiest way to create a new scheme layout is to make any desired color changes to the default scheme, 
+provide a new scheme name in the Name text box, then click _Add_. This will commit the new scheme to the database without 
+affecting the color selection in the default scheme. Please bear in mind; even though the new scheme is selected in the drop-down selector, 
+it will not be applied to the theme until _Save Changes_ is clicked.
 
 ### Deleting Schemes
-To delete a scheme, select the theme to delete in the drop-down selector, and click the <i>Delete</i> button. After verifying if you really want to delete the scheme, the extension will remove the scheme from the database and reset the scheme table to the Default scheme. It will also remove the deleted schemes settings from the theme and reset the theme colors to the default scheme.
+To delete a scheme, select the theme to delete in the drop-down selector, and click the _Delete_ button. 
+After verifying if you really want to delete the scheme, the extension will remove the scheme from the database and reset the scheme table 
+to the Default scheme. It will also remove the deleted schemes settings from the theme and reset the theme colors to the default scheme.
 
 ### Exporting Schemes
-Save a collection of schemes is as easy as clicking the <i>Export</i> button. Redux will download a JSON file of all scheme data to your hard drive (location may vary depending on how and where your browser downloads files). The file name will be in the following format: `redux_schemes_<opt_name>_<field-id>_<current-date>.json`. It is <strong>strongly</strong> recommended that the contents of the export file <strong>not</strong> be edited unless whomever is editing the file is familiar with the <a href="http://www.w3schools.com/json/">JSON format</a>. Doing so could cause failure during import.
+Save a collection of schemes is as easy as clicking the _Export_ button. Redux will download a JSON file of all scheme data to your hard drive 
+(location may vary depending on how and where your browser downloads files). The file name will be in the following format: 
+`redux_schemes_<opt_name>_<field-id>_<current-date>.json`. It is **strongly** recommended that the contents of the export file **not** be edited unless
+whoever is editing the file is familiar with [JSON format](http://www.w3schools.com/json/). Doing so could cause failure during import.
 
 ### Importing Schemes
-To import a collection of schemes into the color scheme field, begin by clicking the <i>Import</i> button. An 'Open' dialog will appear on the screen, prompting for the selection of a file with the `.json` extension. Select a previously exported color scheme file from the computer and click <i>Open</i>. Redux will import the saved settings from the export file into the color scheme field. Once complete, the browser will refresh itself so the imported data will be properly displayed.
+To import a collection of schemes into the color scheme field, begin by clicking the _Import_ button. An 'Open' dialog will appear on the screen, 
+prompting for the selection of a file with the `.json` extension. Select a previously exported color scheme file from the computer and click 
+_Open_. Redux will import the saved settings from the export file into the color scheme field. Once complete, the browser will refresh itself 
+so the imported data will be properly displayed.
 
-<strong>NOTE:</strong> Any existing color scheme settings will be overwritten.
+**NOTE:** Any existing color scheme settings will be overwritten.
 
 ## Extended Classes
-Should the color selector and color picker popup styles not be to your liking, or should you want to match them with your theme, we've provided two classes, the `container` and `replacer` classes to make those changes. To activate these classes, the `use_extended_classes` argument in the `options` array must be set to `true`. On the next page load/refresh, the extension will add the `redux-color-schemes.css` file to your theme's directory. This is necessary as the extension must enqueue the file specifically. We cannot use the native `styles.css` as it does not enqueue in the options panel. Also note then setting `use_extended_classes` to false will automatically remove that CSS file.
+Should the color selector and color picker popup styles not be to your liking, or should you want to match them with your theme, 
+we've provided two classes, the `container` and `replacer` classes to make those changes. To activate these classes, the `use_extended_classes` argument 
+in the `options` array must be set to `true`. On the next page load/refresh, the extension will add the `redux-color-schemes.css` 
+file to your theme's directory. This is necessary as the extension must enqueue the file specifically. 
+We cannot use the native `styles.css` as it does not enqueue in the options panel. Also note then setting `use_extended_classes` to false 
+will automatically remove that CSS file.
 
 Inside `redux-color-schemes.css` you will find two classes. `redux-colorpicker-container` and `redux-replacer-container`.
 
-The Container class represent the color picker popup window, as shown below.
+The Container class represents the color picker popup window, as shown below.
 
 <span style="display:block;text-align:center">![](./img/color_schemes_picker.png)</span>
 
-By adding CSS selectors and elements to the container class, it's overall look and feel may be manipulated to your liking. The following example demonstrates how to give the color picker container a purple background:
+By adding CSS selectors and elements to the container class, its overall look and feel may be changed to your liking. 
+The following example demonstrates how to give the color picker container a purple background:
 
 ```css
 .redux-colorpicker-container {
@@ -296,11 +304,12 @@ By adding CSS selectors and elements to the container class, it's overall look a
 
 <span style="display:block;text-align:center">![](./img/color_schemes_picker_color.png)</span>
 
-The Replacer class represents the replacer element, or the color block:
+The Replacer class represents the replacer element or the color block:
 
 <span style="display:block;text-align:center">![](./img/color_schemes_replacer.png)</span>
 
-Using the exact same method for the Container class, the same results are accomplished by adding CSS selectors and elements to the Replacer class. The following example would change the replacer element's background to purple:
+Using the exact same method for the Container class, the same results are achieved by adding CSS selectors and elements to the Replacer class. 
+The following example would change the replacer element's background to purple:
 
 ```css
 .redux-colorpicker-replacer {
@@ -312,7 +321,8 @@ Using the exact same method for the Container class, the same results are accomp
 
 ## Color Palettes
 
-Creating a custom palette for use within with color picker popup (container) requires setting a series of color arrays with string hex values within a single array. The Redux color scheme extension comes pre-programmed with the following palette.
+Creating a custom palette for use within with color picker popup (container) requires setting a series of color arrays with string hex values 
+within a single array. The Redux color scheme extension comes pre-programmed with the following palette.
 
 ```php
 'palette' => array(

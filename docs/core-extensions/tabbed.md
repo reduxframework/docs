@@ -8,14 +8,6 @@ The Redux Tabbed extension easily allows developers to group specific options wi
 [[toc]]
 :::
 
-::: tip Notice
- Please be aware that a working 
- knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
-:::
-
 ## Arguments
 | Name         | Type      | Default                                                                                                                 | Description                                                                                                                                                             |
 |--------------|-----------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,7 +72,7 @@ Redux::set_section(
 								'compiler' => 'true',
 								'desc'     => esc_html__( 'Basic media uploader with disabled URL input field.', 'your-textdomain-here' ),
 								'subtitle' => esc_html__( 'Upload any media using the WordPress native uploader', 'your-textdomain-here' ),
-								'default'  => array( 'url' => 'http://s.wordpress.org/style/images/codeispoetry.png' ),
+								'default'  => array( 'url' => 'https://s.wordpress.org/style/images/codeispoetry.png' ),
 							),
 							array(
 								'id'       => 'opt-tab-gallery',

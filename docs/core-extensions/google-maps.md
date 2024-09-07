@@ -1,18 +1,12 @@
 # Google Maps <Badge text="field" type="warn"/>
 
-The Redux Google Map extension offers users the ability to search for map locations via the Redux options panel using the Google Maps API.  Such an extension comes in very handy when outputting maps and markers on the front-end of theme pages, using latitude/longitude return values with the Google Maps API.
+The Redux Google Map extension offers users the ability to search for map locations via the Redux options panel using the Google Maps API to
+output maps and markers on the front-end of theme pages, using latitude/longitude return values with the Google Maps API.
 
 <span style="display:block;text-align:center">![](./img/google_maps.png)</span>
 
 ::: warning Table of Contents
 [[toc]]
-:::
-
-::: tip Getting Started
-Please be aware that a working knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
 :::
 
 ::: danger DISCLAIMER
@@ -80,20 +74,31 @@ For this extension, default values are optional.  Leaving them blank (or not set
 |zoom|string/int|3 - when using lat/lng<br /><br />17 - when using addresses.|The amount of zoom in which to set the map.|
 
 ## Google Maps API Key
-The Redux Google Maps extension does not contain an API Key.  This constitutes the standard usage limit for the Google Maps API, which is free until exceeding 25,000 map loads per 24 hours for 90 consecutive days.  In most normal situations, since these maps are only loaded on displayed in your options panel, to break such a limit would be unusual.  However, since nothing is impossible, if this limit should be reached, it may become necessary to obtain a Google Maps API Key.  It is not your responsibility as a theme developer to provide one with your theme.  We've included a Google Maps API Key feature in the extension where your users are given this information with links to obtain their own unique key for high usage.  While we've provided very general information about this via our interface, it's recommended you include this information in your theme documentation so your users are aware of such limitations and if necessary, how to deal with them.
+The Redux Google Maps extension does not contain an API Key.  This constitutes the standard usage limit for the Google Maps API, 
+which is free until exceeding 25,000 map loads per 24 hours for 90 consecutive days.  In most normal situations, since these maps are only loaded on 
+display in your options panel, to break such a limit would be unusual.  However, since nothing is impossible, if this limit should be reached, 
+it may become necessary to get a Google Maps API Key.  It is not your responsibility as a theme developer to provide one with your theme.  
+We've included a Google Maps API Key feature in the extension where your users are given this information with links to get their own unique key for 
+high usage. While we've provided very general information about this via our interface, it's recommended you include this information in your theme 
+documentation so your users are aware of such limitations and if necessary, how to deal with them.
 
-If your theme uses the rendering of Google Maps on the front end via a shortcode or Visual Composer and have chosen to include a Google Maps API Key with your theme, you may set this key via the `api_key` argument as described in the Advanced Arguments section above.
+If your theme uses the rendering of Google Maps on the front end via a shortcode or Visual Composer and have chosen to include a Google Maps API Key 
+with your theme, you may set this key via the `api_key` argument as described in the Advanced Arguments section above.
 
-For more information about Google Maps API Usage guidelines, please visit <a href="https://developers.google.com/maps/documentation/javascript/usage" target="_blank">https://developers.google.com/maps/documentation/javascript/usage</a>
+For more information about Google Maps API Usage guidelines, please visit [https://developers.google.com/maps/documentation/javascript/usage](https://developers.google.com/maps/documentation/javascript/usage)
 
-For more information on obtaining a Google Maps API Key, please visit: <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key</a>
+For more information on obtaining a Google Maps API Key, please visit: [https://developers.google.com/maps/documentation/javascript/get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
 ## Example Config
-Under normal circumstances, it probably will not be necessary to set any default values, as your users will ultimately want to set their own via the map interface.  However, if you have a reason to set to default, please take note of the following limitations:
+Under normal circumstances, it probably won't be necessary to set any default values, as your users will ultimately want to set their own via the map 
+interface.  However, if you have a reason to set to default, please take note of the following limitations:
 
-<strong>NOTE</strong>:  The Google Fonts extension will always use the latitude and longitude settings first, so set a map.  It will ignore address settings.  Both `latitude `and `longitude `arguments must be set.  It cannot be one or the other, otherwise Google Map will display wither the address information (if any is set) or display the default full map of America.
+**NOTE**: The Google Fonts extension will always use the latitude and longitude settings first, so set a map.  It will ignore address settings. 
+Both `latitude `and `longitude `arguments must be set. It cannot be one or the other, otherwise Google Map will display wither the address information 
+(if any is set) or display the default full map of America.
 
-<strong>NOTE</strong>:  If setting only the `latitude `and `longitude `arguments, no address data will be displayed or generated.  Alternatively, if address information is set, Google Maps will return the closest latitude/longitude coordinates.
+**NOTE**: If setting only the `latitude `and `longitude `arguments, no address data will be displayed or generated. Alternatively, if address information 
+is set, Google Maps will return the closest latitude/longitude coordinates.
 
 ```php
 array(
@@ -119,7 +124,9 @@ array(
 ```
 
 ## Example Usage
-The extension's return value is an array of the default values above and their values. The default values returned will remain unchanged if the user does not change the map's location. When they do, the new location information will be output. (Please remember to replace `redux_demo` with your own `<a title="opt_name" href="/redux-framework/arguments/opt_name">opt_name</a>` argument).
+The extension's return value is an array of the default values above and their values. The default values returned will remain unchanged if the user 
+does not change the map's location. When they do, the new location information will be output. (Please remember to replace `redux_demo` with your own 
+[opt_name](../configuration/global_arguments.md#opt-name) argument).
 
 ```php
 global $redux_demo;

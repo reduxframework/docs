@@ -1,19 +1,11 @@
 # Repeater <Badge text="field" type="warn"/>
 
-The Redux Repeater extension easily allows developers to group like fields in a dynamic manner, or static number. 
-Allowing values to be grouped (nested) under a single key, or under each individual key. All values will be returned 
+The Redux Repeater extension easily allows developers to group like fields dynamic, or static numbers. 
+Allowing values to be grouped (nested) under a single key or under each individual key. All values will be returned 
 as an array.
 
 ::: warning Table of Contents
 [[toc]]
-:::
-
-::: tip Notice
- Please be aware that a working 
- knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
 :::
 
 ## Arguments
@@ -44,67 +36,77 @@ as an array.
 ## Extended Argument Details
 
 #### The `static` Argument
-By default, repeater is a dynamic field, however it can act with a predefined  number of static repeater blocks. This allows developers to specifically set the number of repeater blocks they desire to use.
+By default, repeater is a dynamic field; however, it can act with a predefined number of static repeater blocks. This allows developers to specifically 
+set the number of repeater blocks they desire to use.
 
 #### The `bind_title` Argument
-By default, the first field passed within a repeater is bound as the title. As the values selected or modified change, the title for that given repeater block will update. Developers may set this to false as to disable all titles, or set it to an ID had within the repeater field and the title will update accordingly for each repeater block.
+By default, the first field passed within a repeater is bound as the title. As the values selected or modified change, the title for that given 
+repeater block will update. Developers may set this to false as to disable all titles, or set it to an ID had within the repeater field, and the title 
+will update accordingly for each repeater block.
 
 #### The `limit` Argument
 Provided the `static` argument is not used, this will limit the number of dynamic repeater blocks that users can create. By default, this is set to 10.
 
 #### The `group_values` Argument
-The group values allows you to store all values within the repeater id value inside your global variable. For example, say you had a repeater as denoted below, and you set this to true. To access all the field values within the repeater field, you would need to follow the Example Usage - Grouped Values example denoted below. This, by default, is turned off.
+The group by values allows you to store all values within the repeater id value inside your global variable. For example, say you had a repeater 
+as denoted below, and you set this to true. To access all the field values within the repeater field, you would need to follow the 
+Example Usage - Grouped Values example denoted below. This, by default, is turned off.
 
-::: danger Due to the unique way Redux stores data when setting this argument to true, `required` funcionality will fail on first load of the options panel.  If you intend to use `required` functionality in your repeater field, this argument is <strong>NOT</strong> recommended.
+::: danger Due to the unique way Redux stores data when setting this argument to true, `required` funcionality will fail on the first load of the 
+options panel.  If you intend to use `required` functionality in your repeater field, this argument is **NOT** recommended.
 :::
 
 #### The `sortable` Argument
-By default, each repeater block is sortable and the values will be returned to the developer in the order of which they are saved. However, should a developer like to disable this feature, they may set this to false and sorting will be enabled to the user.
+By default, each repeater block is sortable and the values will be returned to the developer in the order of which they are saved. However, 
+should a developer like to disable this feature, they may set this to false and sorting will be enabled to the user.
 
 ## Example Config
 ```php
-Redux::set_section( 'OPT_NAME',  array(
-    'title' => esc_html__('Repeater Field', 'your-textdomain-here' ),
-    'icon' => 'el-icon-thumbs-up',
-    'fields' => array(
-        array(
-            'id'             => 'repeater-field-id',
-            'type'           => 'repeater',
-            'title'          => esc_html__( 'Title', 'your-textdomain-here' ),
-            'subtitle'       => esc_html__( '', 'your-textdomain-here' ),
-            'desc'           => esc_html__( '', 'your-textdomain-here' ),
-            //'group_values' => true, // Group all fields below within the repeater ID
-            //'item_name'    => '', // Add a repeater block name to the Add and Delete buttons
-            //'bind_title'   => '', // Bind the repeater block title to this field ID
-            //'static'       => 2, // Set the number of repeater blocks to be output
-            //'limit'        => 2, // Limit the number of repeater blocks a user can create
-            //'sortable'     => false, // Allow the users to sort the repeater blocks or not
-            'fields'         => array(
-                array(
-                    'id'          => 'title_field',
-                    'type'        => 'text',
-                    'placeholder' => esc_html__( 'Title', 'your-textdomain-here' ),
-                ),
-                array(
-                    'id'          => 'text_field',
-                    'type'        => 'text',
-                    'placeholder' => esc_html__( 'Text Field', 'your-textdomain-here' ),
-                ),
-                array(
-                    'id'      => 'select_field',
-                    'type'    => 'select',
-                    'title'   => esc_html__( 'Select Field', 'your-textdomain-here' ),
-                    'options' => array(
-                        '1'      => esc_html__( 'Option 1', 'your-textdomain-here' ),
-                        '2'      => esc_html__( 'Option 2', 'your-textdomain-here' ),
-                        '3'      => esc_html__( 'Option 3', 'your-textdomain-here' ),
+Redux::set_section( 
+    'OPT_NAME',  
+    array(
+        'title' => esc_html__('Repeater Field', 'your-textdomain-here' ),
+        'icon' => 'el-icon-thumbs-up',
+        'fields' => array(
+            array(
+                'id'             => 'repeater-field-id',
+                'type'           => 'repeater',
+                'title'          => esc_html__( 'Title', 'your-textdomain-here' ),
+                'subtitle'       => esc_html__( '', 'your-textdomain-here' ),
+                'desc'           => esc_html__( '', 'your-textdomain-here' ),
+                //'group_values' => true, // Group all fields below within the repeater ID
+                //'item_name'    => '', // Add a repeater block name to the Add and Delete buttons
+                //'bind_title'   => '', // Bind the repeater block title to this field ID
+                //'static'       => 2, // Set the number of repeater blocks to be output
+                //'limit'        => 2, // Limit the number of repeater blocks a user can create
+                //'sortable'     => false, // Allow the users to sort the repeater blocks or not
+                'fields'         => array(
+                    array(
+                        'id'          => 'title_field',
+                        'type'        => 'text',
+                        'placeholder' => esc_html__( 'Title', 'your-textdomain-here' ),
                     ),
-                    'placeholder' => esc_html__( 'Listing Field', 'your-textdomain-here' ),
+                    array(
+                        'id'          => 'text_field',
+                        'type'        => 'text',
+                        'placeholder' => esc_html__( 'Text Field', 'your-textdomain-here' ),
+                    ),
+                    array(
+                        'id'      => 'select_field',
+                        'type'    => 'select',
+                        'title'   => esc_html__( 'Select Field', 'your-textdomain-here' ),
+                        'options' => array(
+                            '1'      => esc_html__( 'Option 1', 'your-textdomain-here' ),
+                            '2'      => esc_html__( 'Option 2', 'your-textdomain-here' ),
+                            '3'      => esc_html__( 'Option 3', 'your-textdomain-here' ),
+                        ),
+                        'placeholder' => esc_html__( 'Listing Field', 'your-textdomain-here' ),
+                    ),
                 ),
             )
         )
-    )
-) );
+    ) 
+);
 ```
 
 ## Example Usage

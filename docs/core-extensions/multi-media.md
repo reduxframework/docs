@@ -1,17 +1,10 @@
 # Multi Media <Badge text="field" type="warn"/>
 
-The Redux Multi Media extension is an improved way to allow your users to upload and/or select multiple files from the WordPress media library, for use in the Redux Framework options panel.
+The Redux Multi Media extension is an improved way to allow your users to upload and/or select multiple files from the WordPress media library 
+for use in the Redux Framework options panel.
 
 ::: warning Table of Contents
 [[toc]]
-:::
-
-::: tip Notice
-Please be aware that a working
-knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other
-(or both), please refer to the following guides to get you started:
-[Getting Started with PHP](http://www.php.net/manual/en/tutorial.php),
-[CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
 :::
 
 ## Arguments
@@ -57,31 +50,29 @@ for localization purposes, but for flexibility reasons as well.
 ## Example Config
 
 ```php
-Redux::set_field( 
-    'OPT_NAME', 
-    'SECTION_ID', 
-    array(
-        'id'        => 'opt-multi-media',
-        'type'      => 'multi_media',
-        'title'     => 'Multi Media Selector',
-        'subtitle'  => 'Multi file media selector',
-        'labels'    => array(
-            'upload_file'       => esc_html__( 'Select File(s)', 'your-textdomain-here' ),
-            'remove_image'      => esc_html__( 'Remove Image', 'your-textdomain-here' ),
-            'remove_file'       => esc_html__( 'Remove', 'your-textdomain-here' ),
-            'file'              => esc_html__( 'File: ', 'your-textdomain-here' ),
-            'download'          => esc_html__( 'Download', 'your-textdomain-here' ),
-            'title'             => esc_html__( 'Multi Media Selector', 'your-textdomain-here' ),
-            'button'            => esc_html__( 'Add or Upload File','your-textdomain-here' )
-        ),
-        'library_filter'  => array( 'gif','jpg','png' ),
-        'max_file_upload' => 5
-    ) 
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'      => esc_html__( 'Multi Media', 'your-textdomain-here' ),
+		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-extensions/multi-media.html" target="_blank">https://devs.redux.io/core-extensions/multi-media.html</a>',
+		'subsection' => true,
+		'fields'     => array(
+			array(
+				'id'              => 'opt-multi-media',
+				'type'            => 'multi_media',
+				'title'           => esc_html__( 'Multi Media Selector', 'your-textdomain-here' ),
+				'subtitle'        => esc_html__( 'Alternative media field which allows for multi selections', 'your-textdomain-here' ),
+				'desc'            => esc_html__( 'max_file_limit has been set to 5.', 'your-textdomain-here' ),
+				'max_file_upload' => 5,
+			),
+		),
+	)
 );
 ```
 
 ## Example Usage
-The extension's return value is an array of key/pair values. The key contains the file's post ID, while the value contains the URL of the file itself. It will be necessary to use a for/each loop to extract the values (Please remember to replace `redux_demo` with your own `<a href="/redux-framework/arguments/opt_name" title="opt_name">opt_name</a>` argument).
+The extension's return value is an array of key/pair values. The key contains the file's post-ID, while the value contains the URL of the file itself. 
+It will be necessary to use a for/each loop to extract the values (Please remember to replace `redux_demo` with your own [`opt_name`](../configuration/global_arguments.html#opt-name) argument).
 
 ### Using the API
 ```php
@@ -105,7 +96,7 @@ foreach ( $redux_demo['opt-multi-media'] as $id => $url ) {
 
 ## The `get_extended_data` Helper Function
 The Multi Media extension includes a helper function to extract a wide variety of data for any post ID passed to it. To 
-take advantage of this function, use the following code (to obtain a post ID, use the code above in conjunction with the 
+take advantage of this function, use the following code (to get a post ID, use the code above in conjunction with the 
 code below):
 
 ```php

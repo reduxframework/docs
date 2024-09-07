@@ -1,21 +1,12 @@
 # Date-Time Picker <Badge text="field" type="warn"/>
 
 The Redux Date-Time Picker (DTP) extension is a new way to select dates and times for use in text fields.  The DTP 
-contains several modes based no how you would like to display time and date data.  Include all date-time info in one 
+contains several modes based on how you'd like to display time and date data.  Include all date-time info in one 
 text box?  No problem!  Split the time into its own text box?  No problem!  Have need to set ranges for dates or times?  
 We've got you covered there too!
 
 ::: warning Table of Contents
 [[toc]]
-:::
-
-::: tip Getting Started
-To understand how to use extensions, you should read this article on [Using Extensions](../guides/basics/using-extensions.md).
- To shortcut the process, you can use the [Redux Build](http://build.redux.io/) site. Please be aware that a working 
- knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
 :::
 
 ## Arguments
@@ -79,7 +70,7 @@ setting it to `1` begins on the day after the current date, and so on.  The `dat
 number of days in the actual range.  Setting it to `30` would create a 30-day range.
 
 Alternatively, setting the `date-min` and `date-max` ranges as an array of month, day, and year values allows you to 
-select a date specific range at any point in the calendar.
+select a date-specific range at any point in the calendar.
 
 |Name|Type|Default|Description|
 |--- |--- |--- |--- |
@@ -152,7 +143,7 @@ array (
 ```
 
 ### Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
 in your [opt_name](../configuration/global_arguments.md#opt-name) argument.
 
 ```php
@@ -176,7 +167,7 @@ Format a date into a string value with a specified format. The format can be com
 - **D** – day name short
 - **DD** – day name long
 - **m** – month of year (no leading zero)
-- **mm** – month of year (two digit)
+- **mm** – month of year (two digits)
 - **M** – month name short
 - **MM** – month name long
 - **y** – year (two digit)

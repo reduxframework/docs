@@ -9,14 +9,8 @@ button, include that function in a JavaScript file assigned to the field and wat
 :::
 
 ::: tip Getting Started
- Please be aware that a working 
- knowledge of PHP and CSS is required to properly use this extension. Should you not be familiar with one or the other 
- (or both), please refer to the following guides to get you started: 
- [Getting Started with PHP](http://www.php.net/manual/en/tutorial.php), 
- [CSS Introduction](http://www.w3schools.com/css/css_intro.asp).
- 
- Also, knowledge of JavaScript and/or [jQuery](https://jquery.com/) is required to author your own functions.  This 
- extension does all the work behind the scenes to trigger your custom functions, but to accomplish anything when the 
+ Knowledge of JavaScript and/or [jQuery](https://jquery.com/) is required to author your own functions.  This 
+ extension does all the work behind the scenes to trigger your custom functions, but to achieve anything when the 
  buttons are clicked, you'll need to be able to author your own code.
 :::
 
@@ -71,9 +65,9 @@ The `buttons` argument accepts a single array populated by arrays that accept th
 
 
 ## Example Config
-For this example (included in the download), assume we've placed our javascript file in the theme's root directory. We 
-can easily obtain its location using [get_template_directory_uri()](https://developer.wordpress.org/reference/functions/get_template_directory_uri/). 
-Since our example javascript (shown below) uses [jQuery](https://jquery.com/), we must pass the [jQuery](https://jquery.com/) 
+For this example (included in the download), assume we've placed our JavaScript file in the theme's root directory. We 
+can easily get its location using [get_template_directory_uri()](https://developer.wordpress.org/reference/functions/get_template_directory_uri/). 
+Since our example JavaScript (shown below) uses [jQuery](https://jquery.com/), we must pass the [jQuery](https://jquery.com/) 
 dependency via the `scripts` `dep` argument.
 
 ```php
@@ -81,7 +75,7 @@ array (
     'id'            => 'opt-js-button',
     'type'          => 'js_button',
     'title'         => 'JS Button',
-    'subtitle'      => 'Run javascript manually from the options panel.',
+    'subtitle'      => 'Run JavaScript manually from the options panel.',
     'script'        => array(
         'url'       => get_template_directory_uri() .  '/sample.js',
         'dep'       => array('jquery'),
