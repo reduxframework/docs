@@ -38,7 +38,7 @@ The Border field is a great way to set the border properties of any HTML object 
 |Name|Type|Description|
 |--- |--- |--- |
 |border-color|string|Hex string representing the default color.|
-|border-style|string|Sets the default CSS border.  Accepts: `solid` `dotted` `dashed` or `none`.|
+|border-style|string|Sets the default CSS border. Accepts: `solid` `dotted` `dashed` or `none`.|
 |border-top|string|Sets the default value of the top border.|
 |border-right|string|Sets the default value of the right border.|
 |border-bottom|string|Sets the default value of the bottom border.|
@@ -86,7 +86,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ## Example Usage
-This example in based on the code above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example is based on the code above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;

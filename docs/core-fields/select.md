@@ -30,9 +30,6 @@ The Select field displays information in a drop-down field in both single and mu
 ## Standard Select
 ![](https://f.cloud.github.com/assets/3412363/1569797/d77655e8-50d4-11e3-8580-cf1eba05ea7e.png)
 
-
-
-
 ```php
 Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
     'id'       => 'opt-select',
@@ -86,7 +83,7 @@ export default {
 
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
 in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
@@ -99,7 +96,7 @@ echo 'Multi Select value: '  . $redux_demo['opt-multi-select'][1];
 
 ## Disabling "Clear" Icon
 Sometimes you don't want the user to have a null value. The "clear" icon is easily removed by passing a value to the 
-`select2` argument. Be sure to define a default value or the field will start in a null state.
+`select2` argument. Be sure to define a default value, or the field will start in a null state.
 
 ```php
 Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(

@@ -1,6 +1,7 @@
 # Select Image
 
-The Select Image field offers the ability to populate a drop-down field with an array of images names.  When selected, a preview of the image appears underneath.
+The Select Image field offers the ability to populate a drop-down field with an array of images names.  When selected, a preview of the image appears 
+underneath.
 
 <span style="display:block;text-align:center">![](./img/select_image.png)</span>
 
@@ -63,7 +64,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;

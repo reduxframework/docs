@@ -1,6 +1,6 @@
 # ACE Editor
 
-The ACE Editor field offers the ability to edit back-end code in an easy to use and easy to read embedded interface.  In 
+The ACE Editor field offers the ability to edit back end code in an easy to use and easy to read embedded interface.  In 
 addition to matching the features of native code editors such as [Sublime Text](https://www.sublimetext.com/), 
 [Vim](http://www.vim.org) and [TextMate](http://macromates.com), ACE offers real-time checking for code accuracy.
 
@@ -57,7 +57,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ## Example Usage
-This example in based on the code above. Be sure to change `$redux_demo` to the value you specified 
+This example is based on the code above. Be sure to change `$redux_demo` to the value you specified 
 in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php

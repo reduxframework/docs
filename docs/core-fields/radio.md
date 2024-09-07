@@ -68,7 +68,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
 in your [opt_name](../configuration/global_arguments.md#opt_name) argument. Only the key of the select `options` or
 `data` array item will be returned.
 

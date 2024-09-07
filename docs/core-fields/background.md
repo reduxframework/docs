@@ -1,6 +1,7 @@
 # Background
 
-The Background field offers unmatched features not found in any other option framework.  Users will be able to present the background designs found in professionally authored pages with a few simple clicks.
+The Background field offers unmatched features not found in any other option framework.  Users will be able to present the background designs found 
+in professionally authored pages with a few simple clicks.
 
 <span style="display:block;text-align:center">![](./img/background.png)</span>
 
@@ -88,7 +89,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ### Example Usage
-This example in based on the code above.  Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example is based on the code above.  Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;

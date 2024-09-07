@@ -23,7 +23,8 @@ The Content field comes in several modes to display information as heading, subh
 :::
 
 ::: warning Tip
-When using the Content field with `required`, the field cannot be hidden by default.  It’s best only to use the `required` argument with this field when the fold is shown by default.
+When using the Content field with `required`, the field cannot be hidden by default.  It’s best only to use the `required` argument with this 
+field when the fold is shown by default.
 :::
 
 ## Example Config

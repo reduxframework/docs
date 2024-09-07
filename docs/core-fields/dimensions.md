@@ -1,6 +1,7 @@
 # Dimensions
 
-The Dimensions field comes in handy when allowing users the ability to set the width, height and unit value of any HTML element that supports those properties.
+The Dimensions field comes in handy when allowing users the ability to set the width, height and unit value of any HTML element that supports 
+those properties.
 
 <span style="display:block;text-align:center">![](./img/dimensions.png)</span>
 
@@ -16,7 +17,7 @@ The Dimensions field comes in handy when allowing users the ability to set the w
 |default|string||See [Default Argument](#default-argument) below.|
 |width|bool|`true`|Flag to display the width input.|
 |height|bool|`true`|Flag to display the height input.|
-|units|string/bool/array|`px`|Specify a string to pass a single unit value.  Specify an array to pass an array of unit values.  Specify `false` to hide the units selector.  Accepts: `px` `em` `%`.|
+|units|string/bool/array|`px`|Specify a string to pass a single unit value. Specify an array to pass an array of unit values. Specify `false` to hide the units selector. Accepts: `px` `em` `%`.|
 |units_extended|bool|`false`|Flag to allow users to select any type of unit.|
 |select2|array||Array of select2 arguments. [Select2 Documentation](https://select2.org/configuration/options-api).|
 
@@ -34,10 +35,10 @@ The Dimensions field comes in handy when allowing users the ability to set the w
 |--- |--- |--- |
 |width|string|Default value to display.|
 |height|string|Default value to display.|
-|units|string|Default unit to display.  When unspecified, `px` is used by default.|
+|units|string|Default unit to display. When unspecified, `px` is used by default.|
 
 ::: tip
-The `name` properties also serve as the input placeholder text when no value is present.  it is acceptable to capitalize them, if desired.
+The `name` properties also serve as the input placeholder text when no value is present. it is acceptable to capitalize them, if desired.
 :::
 
 
@@ -73,7 +74,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;

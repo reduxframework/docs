@@ -33,7 +33,7 @@ The media field is an adaption for a core WordPress feature.
 :::
 
 ## Image Filters
-While it's possible to use the values returned to the global options variable to set your CSS manually, we've inlcluded the option to automatically our your filter's values automatically.  To utilize this, you'll need to set the class name of the target image in the `output` argument as noted in the example below.
+While it's possible to use the values returned to the global options variable to set your CSS manually, we've included the option to automatically our your filter's values automatically.  To use this, you'll need to set the class name of the target image in the `output` argument as noted in the example below.
 
 |Filter|Default|Description|
 |--- |--- |--- |
@@ -139,7 +139,7 @@ Redux::set_field(
 ```
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;

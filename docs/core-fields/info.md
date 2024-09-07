@@ -1,6 +1,7 @@
 # Info
 
-The Info field comes in several varieties to display information as normal, info warning and success formats.  Choose between the WordPress 3.8 styles, or the non-notice styles.
+The Info field comes in several varieties to display information as normal, info warning and success formats.  Choose between the WordPress 3.8 styles, 
+or the non-notice styles.
 
 ::: warning Table of Contents
 [[toc]]
@@ -22,7 +23,8 @@ The Info field comes in several varieties to display information as normal, info
 :::
 
 ::: warning Tip
-When using the Info field with `required`, the field cannot be hidden by default.  It’s best only to use the `required` argument with this field when the fold is shown by default.
+When using the Info field with `required`, the field cannot be hidden by default.  It’s best only to use the `required` argument with this 
+field when the fold is shown by default.
 :::
 
 ## Build Config

@@ -19,7 +19,7 @@ The Divide field acts as a divider between other fields.
 :::
 
 ::: warning Tip
-When using the Divide field with `required`, the divider cannot be hidden by default.  It's best only to use the `required` argument with this field when the fold is shown by default.
+When using the Divide field with `required`, the divider cannot be hidden by default. It's best only to use the `required` argument with this field when the fold is shown by default.
 :::
 
 

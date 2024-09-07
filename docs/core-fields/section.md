@@ -21,8 +21,8 @@ The Section field provides the ability to set any field below it with an indent.
 
 ::: warning
 When using the [required argument](../configuration/fields/required.md) with the section field, the required statement 
-<strong>must</strong> be included in both the beginning and end section arrays. Also, the section field cannot be 
-hidden by default. It’s best only to use the [required argument](../configuration/fields/required.md) with this field 
+<strong>must</strong> be included in both the beginning and end section arrays. Also, the section field cannot be 
+hidden by default. It’s best only to use the [required argument](../configuration/fields/required.md) with this field 
 when the fold is shown by default.
 :::
 

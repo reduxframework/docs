@@ -1,5 +1,5 @@
 # Slides
-With the Slider field, unlimited slides may be created with titles, descriptions and links.
+With the Slider field, unlimited slides may be created with titles, descriptions, and links.
 
 <span style="display:block;text-align:center">![](./img/slides.png)</span>
 
@@ -69,7 +69,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ## Example Usage
-This example assumes at least one slide has been filled out and saved, based on the example usage provided above. Individual slide information are stored in a zero-based array. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example assumes at least one slide has been filled out and saved, based on the example usage provided above. Individual slide information is stored in a zero-based array. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ::: warning IMPORTANT NOTE
 Redux does NOT save blank slides to the database.  This means on the initial load of your options panel, the empty slide will not be available.  It will be necessary to use `isset` and `!empty` checks on the slide variable before attempting to use it in your code, as shown below.
@@ -91,7 +91,7 @@ if ( isset( $redux_demo['opt-slides'] ) && !empty( $redux_demo['opt-slides'] ) )
 ```
 
 ## Using the `show` Argument
-There are 3 main elements to the slide field, namely the title, description, and URL (media URL). You can easily hide
+There are three main elements to the slide field, namely the title, description, and URL (media URL). You can easily hide
 any of these elements using the `show` argument and providing a key=>False value for the element you wish to hide.
 
 ```php

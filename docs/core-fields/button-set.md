@@ -1,6 +1,7 @@
 # Button Set
 
-The button set gives you a button bar to set options. It can be useful when you want to group a number of options together in a more advanced radio or checkbox (multi argument, see below).
+The button set gives you a button bar to set options. It can be useful when you want to group a number of options together in a more advanced 
+radio or checkbox (multi argument, see below).
 
 <span style="display:block;text-align:center">![](./img/button_set.png)</span>
 
@@ -25,9 +26,9 @@ The button set gives you a button bar to set options. It can be useful when you 
 :::
 
 ## Default Argument
-The value of the default option will depend on whether the `multi` argument is set to true.  By default, the 
-`multi` argument is set to false.  In this case, the `default` argument accepts a string or int value representing the 
-key value from the `options` argument to set as selected.  When `multi` is set to true, the `default` argument accepts 
+The value of the default option will depend on whether the `multi` argument is set to true. By default, the 
+`multi` argument is set to false. In this case, the `default` argument accepts a string or int value representing the 
+key value from the `options` argument to set as selected. When `multi` is set to true, the `default` argument accepts 
 an array of values representing the key of the option from `options` to set as selected.
 
 
@@ -107,7 +108,8 @@ if (!empty) {
 ```
 
 ::: warning
-Due to the way in which data is saved to the database, it is strongly recommended performing a PHP empty() and/or is_array() check when retrieving the data from this field via a foreach() loop.
+Due to the way in which data is saved to the database, it is strongly recommended performing a PHP empty() and/or is_array() check when retrieving the 
+data from this field via a foreach() loop.
 :::
 
 

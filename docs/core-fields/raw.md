@@ -53,7 +53,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 
 ## Example Config with PHP Output
 
-Sometimes you want to do more than just a flat file with raw, and acutally output the results of some PHP code. You
+Sometimes you want to do more than just a flat file with raw, and actually output the results of some PHP code. You
 can easily do that with this approach.
 
 ```php
@@ -63,7 +63,7 @@ echo "HERE I AM";
 Now we're in HTML mode! Everything here will be saved as text,
 including line breaks!
 <?php // And back to PHP mode
-// Don't forget to use a full php here, the shortcode `<?` will get you in trouble!!!
+// Remember to use a full php here, the shortcode `<?` will get you in trouble!!!
 
 echo "Now i'm here"; 
 $output = ob_get_clean(); // Now everything is in our variable.
@@ -81,7 +81,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 
 ## Display Options
 
-These are two modes for the raw field. Full width and "sectioned." Below you will see an example of each.
+These are two modes for the raw field. Full width and "sectioned." Below, you will see an example of each.
 
 ### Full Width => True
 ```php 

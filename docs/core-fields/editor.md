@@ -1,6 +1,6 @@
 # Editor
 
-The Editor field offers WYSIWYG editing capability, using the same editing interface as WordPress itself.
+The Editor field offers WYSIWYG editing capability, using the same editing interface as WordPress.
 
 <span style="display:block;text-align:center">![](./img/editor.png)</span>
 
@@ -13,7 +13,7 @@ The Editor field offers WYSIWYG editing capability, using the same editing inter
 |--- |--- |--- |--- |
 |type|string|`editor`|Value identifying the field type.|
 |default|string||Text to appear inside the editor window by default.|
-|args|array||Sets the default WordPress editor arguments.  See [WP Editor Options](#wp-editor-options) below.|
+|args|array||Sets the default WordPress editor arguments. See [WP Editor Options](#wp-editor-options) below.|
 
 ::: tip Also See
 - [Global Field Arguments](../configuration/fields/arguments.md)
@@ -37,7 +37,8 @@ The Editor field offers WYSIWYG editing capability, using the same editing inter
 
 
 ::: tip
- While the `textarea_name` value is available for the WP Editor options, Redux automatically sets this value for you. There is no real need to set it manually. The `editor_class` value, also part of the WP Editor settings does not need to be set via the `args` array. It can be set via the `class` type.
+ While the `textarea_name` value is available for the WP Editor options, Redux automatically sets this value for you. There is no real need to set it 
+manually. The `editor_class` value, also part of the WP Editor settings does not need to be set via the `args` array. It can be set via the `class` type.
 :::
 
 ## Build Config

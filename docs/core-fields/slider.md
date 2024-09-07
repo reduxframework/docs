@@ -1,6 +1,7 @@
 # Slider
 
-The Redux Slider Field offers a great array features for just about every need.  We offer dual handles, floating point values, text/label/select output and theme responsiveness!
+The Redux Slider Field offers a great array features for just about every need.  We offer dual handles, floating point values, text/label/select output 
+and theme responsiveness!
 
 <span style="display:block;text-align:center">![](./img/slider.png)</span>
 
@@ -138,7 +139,7 @@ array(
 
 ```
 ### Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;

@@ -46,7 +46,7 @@ export default {
 <builder :builder_json="builder" :builder_defaults="defaults" />
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in 
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in 
 your [opt_name](../configuration/global_arguments.md#opt-name) argument.
 
 ```php
@@ -61,7 +61,7 @@ echo $redux_demo['FIELD_ID'];
 
 ## Using the `data` Argument Manually
 This argument serves two purposes with the text field. First, it works like any other [data](../configuration/fields/data.md) argument.
-Meaning it can populate the field with WordPress data. Second, it allows a user to pass single array or a multi-dimensional array 
+Meaning it can populate the field with WordPress data. Second, it allows a user to pass a single array or a multidimensional array 
 to output a number of text fields.
 
 ::: danger TAKE NOTE

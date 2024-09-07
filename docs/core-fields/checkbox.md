@@ -1,6 +1,6 @@
 # Checkbox
 
-The Checkbox field may be used to offer a single check option, or a group of multi-check options.
+The Checkbox field may be used to offer a single check option or a group of multi-check options.
 
 <span style="display:block;text-align:center">![](./img/checkbox.png)</span>
 
@@ -25,7 +25,8 @@ The Checkbox field may be used to offer a single check option, or a group of mul
 
 ## Default Argument
 
-When using a single checkbox, the `default` argument accepts a string/int/bool representing with 0/false or 1/true.  When using multi-checkbox, the `default` argument accepts an array of key pair values.  They key represents the id of the checkbox, the value either a 0/false or 1/true value.
+When using a single checkbox, the `default` argument accepts a string/int/bool representing with 0/false or 1/true.  When using multi-checkbox, 
+the `default` argument accepts an array of key pair values.  They key represents the id of the checkbox, the value either a 0/false or 1/true value.
 
 
 ## Build Config

@@ -1,6 +1,7 @@
 # Color RGBA
 
-The Color RGBA field offers the addition of an alpha channel, initial color selection, saved colors and color palette to the color picker, allowing for not only opacity within the selected color, but an array of useful options for your end users.
+The Color RGBA field offers the addition of an alpha channel, initial color selection, saved colors and color palette to the color picker, 
+allowing for not only opacity within the selected color, but an array of useful options for your end users.
 
 <span style="display:block;text-align:center">![](./img/color_rgba.png)</span>
 
@@ -78,9 +79,9 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
     'subtitle'  => 'Set color and alpha channel',
     'desc'      => 'The caption of this button may be changed to whatever you like!',
 
-    // See Notes below about these lines.
-    //'output'    => array('background-color' => '.site-header'),
-    //'compiler'  => array('color' => '.site-header, .site-footer', 'background-color' => '.nav-bar'),
+    // See the Notes below about these lines.
+    // 'output'    => array('background-color' => '.site-header'),
+    // 'compiler'  => array('color' => '.site-header, .site-footer', 'background-color' => '.nav-bar'),
     'default'   => array(
         'color'     => '#fdfdfd',
         'alpha'     => 1
@@ -110,7 +111,8 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ::: tip
-Different elements (or modes) may be specified in the output and compiler arguments as key/pair values. For example, suppose you want to output a color as a background-color, instead of color. The following output array in key/pair format would accomplish this:
+Different elements (or modes) may be specified in the output and compiler arguments as key/pair values. For example, suppose you want to output a color 
+as a background-color, instead of color. The following output array in key/pair format would achieve this:
 ```php
 'output' => array(
     'background-color' => '.site-header'
@@ -147,7 +149,8 @@ echo 'rgba: '  . $redux_demo['opt-color-rgba']['rgba'];  // rgba(253, 253, 253, 
 ```
 
 ## Color Palettes
-Creating a custom palette for use within with color picker popup (container) requires setting a series of color arrays with string hex values within a single array. The color_rgba field comes pre-programmed with the following palette.
+Creating a custom palette for use within with color picker popup (container) requires setting a series of color arrays with string hex values within a 
+single array. The color_rgba field comes pre-programmed with the following palette.
 
 ```php
 'palette' => array(

@@ -1,6 +1,6 @@
 # Box Shadow
 
-The Box Shadow controls allows for the addition of a box shadow to be drawn around any specified element.
+The Box Shadow control allows for the addition of a box shadow to be drawn around any specified element.
 
 <span style="display:block;text-align:center">![](./img/box-shadow.png)</span>
 

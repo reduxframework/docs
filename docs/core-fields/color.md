@@ -17,7 +17,7 @@ The Color field redefines simplicity. Point and click to choose any color in the
 |color_alpha|bool|`false`|Flag to set the color picker to accept an alpha value.
 
 ::: warning Transparency
-To set the transparency checkbox by default, use the string `transparent` in place of a string hex value  in the `default` argument.
+To set the transparency checkbox by default, use the string `transparent` in place of a string hex value in the `default` argument.
 :::
 
 ::: tip Also See

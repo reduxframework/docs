@@ -1,6 +1,7 @@
 # Color Gradient
 
-The Color Gradient controls allows for the selection of two separate colors, for use in any situation that requires gradient colors (i.e. Header, footer, sidebar, etc...).
+The Color Gradient control allows for the selection of two separate colors, for use in any situation that requires gradient colors 
+(i.e. Header, footer, sidebar, etc...).
 
 <span style="display:block;text-align:center">![](./img/color_gradient.png)</span>
 
@@ -44,7 +45,8 @@ To set the transparency checkbox by default, use the string `transparent` in pla
 :::
 
 ::: warning Gradient Filters
-To automatically output the gradient filters (type, angle, reach) as CSS, include the class name of the element to which the filters should be applied via the `output` argument.
+To automatically output the gradient filters (type, angle, reach) as CSS, include the class name of the element to which the filters should be applied 
+via the `output` argument.
 :::
 
 ## Build Config

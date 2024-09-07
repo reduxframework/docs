@@ -34,7 +34,7 @@ giving your users a choice of UI colors.
 |margin|bool|`false`|Flag to draw margins between the palette color blocks.|
 
 ## Color Palette Presets
-Redux includes a helper function that returns are preset array of colors for use in your projects.
+Redux includes a helper function that returns a preset array of colors for use in your projects.
 Pass the following function to the `colors` argument: 
 ```php 
 Redux_Helpers::get_material_design_colors( 'primary' );
@@ -95,7 +95,7 @@ Redux::set_section(
 ```
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified 
 in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php

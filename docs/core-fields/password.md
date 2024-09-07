@@ -1,6 +1,6 @@
 # Password
 
-The Password field, which can be used as a login with password could be used as a POP or SMTP login for other site functions.
+The Password field, which can be used as a login with password, could be used as a POP or SMTP login for other site functions.
 
 <span style="display:block;text-align:center">![](./img/password.png)</span>
 
@@ -65,7 +65,7 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 ```
 
 ## Example Usage
-This example in based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
+This example is based on the example usage provided above. Be sure to change `$redux_demo` to the value you specified in your [opt_name](../configuration/global_arguments.md#opt_name) argument.
 
 ```php
 global $redux_demo;
