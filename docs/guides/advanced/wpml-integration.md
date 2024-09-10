@@ -18,7 +18,7 @@ The answer is yes, and we'll explain everything in simple steps.
 
 ## Step 1: Find your opt_name variable
 The `opt_name` variable is found in your Redux configuration file. An example can be found in 
-`/sample/sample-config.php`, included in the Redux plugin.
+Redux's [`sample-config.php`](https://github.com/reduxframework/redux-framework/blob/master/sample/sample-config.php), included in the Redux plugin.
 
 This is the variable name saved in the *wp_options* table. In this example opt_name is: `my-theme-options`.
 
@@ -40,9 +40,9 @@ Let's say we want to translate three fields. To make it more interesting we'll d
 Redux::set_field( 'OPT_NAME', 'SECTION_ID', array( 
     'id'       => 'my-sample-textfield',
     'type'     => 'text',
-    'title'    => esc_html__( 'Sample Text Field', 'my-text-domain' ),
-    'subtitle' => esc_html__( 'This is the subtitle.', 'my-text-domain' ),
-    'desc'     => esc_html__( 'This is the description.', 'my-text-domain' ),
+    'title'    => esc_html__( 'Sample Text Field', 'your-text-domain' ),
+    'subtitle' => esc_html__( 'This is the subtitle.', 'your-text-domain' ),
+    'desc'     => esc_html__( 'This is the description.', 'your-text-domain' ),
     'default'  => 'Sample Text'
 ) );
 ```    
@@ -52,8 +52,8 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 Redux::set_field( 'OPT_NAME', 'SECTION_ID', array( 
     'id'       => 'my-sample-textarea',
     'type'     => 'editor',
-    'title'    => esc_html__( 'Sample Text Area', 'my-text-domain' ),
-    'subtitle' => esc_html__( 'Write here your copyright text!', 'my-text-domain' ),
+    'title'    => esc_html__( 'Sample Text Area', 'your-text-domain' ),
+    'subtitle' => esc_html__( 'Write here your copyright text!', 'your-text-domain' ),
     'default'  => 'Powered by Redux Framework.',
 ) );    
 ```
@@ -63,9 +63,9 @@ Redux::set_field( 'OPT_NAME', 'SECTION_ID', array(
 Redux::set_field( 'OPT_NAME', 'SECTION_ID', array( 
     'id'       => 'my-sample-sortable-textfield',
     'type'     => 'sortable',
-    'title'    => esc_html__( 'Sample Sortable Text Option', 'my-text-domain' ),
-    'subtitle' => esc_html__( 'This is a subtitle.', 'my-text-domain' ),
-    'desc'     => esc_html__( 'This is the description.', 'my-text-domain' ),
+    'title'    => esc_html__( 'Sample Sortable Text Option', 'your-text-domain' ),
+    'subtitle' => esc_html__( 'This is a subtitle.', 'your-text-domain' ),
+    'desc'     => esc_html__( 'This is the description.', 'your-text-domain' ),
     'options'  => array(
         'si1' => 'Item 1',
         'si2' => 'Item 2',
@@ -106,7 +106,7 @@ This is how our admin-texts block should look like.
 </admin-texts>
 ```
 
-The first key is always our opt_name e.g: `my-theme-options`. The single options as a self-closed key tag and the 
+The first key is always our opt_name e.g.: `my-theme-options`. The single options as a self-closed key tag and the 
 serialized array as a nested key block.
 
 For the WPML config file, refer to the official website: [WPML Language Configuration Files](http://wpml.org/documentation/support/language-configuration-files/)

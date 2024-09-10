@@ -17,10 +17,10 @@ To do this is simple. First, copy the templates from `~/redux-core/templates/pan
 Never, ever, **EVER** modify `redux-core`. Always move things out of the core to make modifications.
 :::
 
-Tell Redux where these new files are, via the `templates_path` argument. That's it!
+Tell Redux where these new files are, via the [`templates_path`](../../configuration/global_arguments.md#templates_path) argument. That's it!
 
 #### What if you change something?
-Our templates use the same version methods of other products. If your panel is in `dev_mode` a notice will be displayed in the panel
+Our templates use the same version methods of other products. If your panel is in `dev_mode` a notice will display in the panel
 when a template file has been updated in the core.
 
 ## Won't this Change All Panels?

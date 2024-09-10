@@ -18,13 +18,13 @@ WordPress memory can be different to the server – you need to set this regardl
 
 If you have access to your PHP.ini file, change the line in PHP.ini
 
-If your line shows 32M try 64M:
+If your line shows 32M, try 64M:
 
 ```text
 memory_limit = 64M ; Maximum amount of memory a script may consume (64MB)
 ```
 
-If you don’t have access to PHP.ini try adding this to an .htaccess file:
+If you don’t have access to PHP.ini, try adding this to an .htaccess file:
 
 ```text
 php_value memory_limit 64M

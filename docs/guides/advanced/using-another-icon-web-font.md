@@ -3,8 +3,7 @@ title: "Using Another Icon Font"
 ---
 
 # Using Another Icon Web Font
-Redux uses Elusive Icons in our panel. Why? @aristath, a good friend of the Redux team designed the icon pack. As a 
-result, we can use any icon we want.  We understand our choice in icon pack may not match or suit everyone's needs. 
+Redux uses Elusive Icons in our panel. We understand our choice in icon pack may not match or suit everyone's needs. 
 This is why we've made it easy to add a new icon pack. Here's how:
 
 ```php
@@ -26,10 +25,10 @@ function new_icon_font() {
 add_action( 'redux/page/' . $opt_name . '/enqueue', 'new_icon_font' );
 ```
 
-Now to use the added icons, you can do the following for a [section](../../configuration/objects/section.md) declaration:
+To use the added icons, add the following [section](../../configuration/objects/section.md) declaration:
 
 ```php
-Redux::addSection( 'OPT_NAME', array( 
+Redux::add_section( 'OPT_NAME', array( 
     'id'     => 'icon_section',
     'title'  => esc_html__('Home Settings', 'your-textdomain-here'),
     'header' => esc_html__('Welcome to the Redux Framework Demo', 'your-textdomain-here'),

@@ -11,7 +11,7 @@ the moment a Redux object has been loaded (your Redux config has been run).
 :::
 
 ## Getting Started
-First, you must get the Redux object. The easiest method is as follows:
+First, get the Redux object. The easiest method is as follows:
 
 ```php
 $redux = Redux::get_instance('OPT_NAME'); // TODO - Use your opt_name
@@ -27,17 +27,17 @@ Below is a list of available commands and the arguments associated with each.
 
 ## Chmod / File Permissions
 By default, the WP_FileSystem API uses default values for chmod (read/write permissions). These are in the form of the 
-declared FS_CHMOD_DIR for directories or FS_CHMOD_FILE for files. Do not worry about setting these values yourself.
+declared `FS_CHMOD_DIR` for directories or `FS_CHMOD_FILE` for files. Do not worry about setting these values yourself.
 
 ::: tip
 If you **must** override the default chmod settings, you may pass in a chmod argument for all actions except 
-object and unzip. To do so, pass a string or int: `0644` as this argument value.
+object and unzip. To do so, pass a string or int: `0644` as this argument's value.
 :::
 
 ## Possible Calls & Arguments.
 
 ### `mkdir`
-Creates a directory. It will even make multiple children directories even it if it doesn't exist.
+Create a directory. It will even make multiple child directories even it if it doesn't exist.
 
 ```php
 $redux = Redux::get_instance( 'OPT_NAME' ); // TODO - Use your opt_name
@@ -92,7 +92,7 @@ $redux->filesystem->execute(
 ```
 
 ### `get_contents`
-Retrieves the contents of a file. This command will attempt to use the WordPress filesystem first. 
+Retrieve the contents of a file. This command will attempt to use the WordPress filesystem first. 
 However, if the file does not have the standard WordPress read permissions, it will fall back to `file_get_contents`.
 
 ```php

@@ -3,8 +3,8 @@ title: "The Health Status Report"
 ---
 
 # Understanding The Health Status Report
-The Redux Framework System Status report is a vital tool used in troubleshoot issues with your site. With a wide 
-variety of sections and fields, software versions, server settings, and WordPress configuration, all may be checked in a 
+The Redux Framework System Status report is a vital tool used to troubleshoot issues with your site. With a wide 
+variety of sections and fields, software versions, server settings, and WordPress configuration, all may be checked at a 
 moment’s notice.
 
 The System Status report is also the best way that the Redux Support Team can help you.  Before opening a ticket, be 
@@ -17,22 +17,22 @@ sure to add your settings and check to see if you can troubleshoot an issue with
 ## WordPress Environment
 This section provides general information about your site, your WordPress installation, and the features you have enabled.
 
-|Field Name|Description|Example|
-|--- |--- |--- |
-|Home URL|The URL of your site's homepage.|http://example.com|
-|Site URL|The root URL of your site.|http://example.com|
-|Redux Version|The version of Redux Framework installed on your site.|3.4.4.5|
-|Redux Data Directory Writable|Whether the Redux data directory is writable, and its location.|/srv/www/wp-content/uploads/redux/|
-|WP Version|The version of WordPress installed on your site.|3.4.1|
-|WP Multisite|Whether you have WordPress Multisite enabled.|-|
-|Permalink Structure|The WordPress permalink structure set in Settings->Permalinks.|/%postname%/|
-|Front Page Display|The sitting to display "Latest Posts" or "Static Pages" as set in Settings->Reading.|posts|
-|Front Page|The name of the page used as the "Front Page" of the site.  This information is displayed only when Front Page Display is set to pages.|
-|Posts Page|The name of the page used as the "Post Page" of the site.  This information is displayed only when Front Page Display is set to pages.|
-|WP Memory Limit|The maximum amount of memory (RAM) that your site can use at one time. Learn how to increase this limit here.|64 MB|
-|Database Table Prefix|Displays the length of the WordPress database table prefix, and whether it falls into acceptable parameters.|Length: 3 - Status: Acceptable|
-|WP Debug Mode|Displays whether WordPress is in Debug Mode.|-|
-|Language|The current language used by WordPress. Default = English|en_US|
+|Field Name|Description| Example                            |
+|--- |--- |------------------------------------|
+|Home URL|The URL of your site's homepage.| http://example.com                 |
+|Site URL|The root URL of your site.| http://example.com                 |
+|Redux Version|The version of Redux Framework installed on your site.| 4.5                                |
+|Redux Data Directory Writable|Whether the Redux data directory is writable, and its location.| /srv/www/wp-content/uploads/redux/ |
+|WP Version|The version of WordPress installed on your site.| 6.2                                |
+|WP Multisite|Whether you have WordPress Multisite enabled.| -                                  |
+|Permalink Structure|The WordPress permalink structure set in Settings->Permalinks.| /%postname%/                       |
+|Front Page Display|The sitting to display "Latest Posts" or "Static Pages" as set in Settings->Reading.| posts                              |
+|Front Page|The name of the page used as the "Front Page" of the site. This information is displayed only when Front Page Display is set to pages.|
+|Posts Page|The name of the page used as the "Post Page" of the site. This information is displayed only when Front Page Display is set to pages.|
+|WP Memory Limit|The maximum amount of memory (RAM) that your site can use at one time.Learn how to increase this limit here.| 64 MB                              |
+|Database Table Prefix|Displays the length of the WordPress database table prefix, and whether it falls into acceptable parameters.| Length: 3 - Status: Acceptable     |
+|WP Debug Mode|Displays whether WordPress is in Debug Mode.| -                                  |
+|Language|The current language used by WordPress. Default = English| en_US                              |
 
 
 ## Browser
@@ -90,9 +90,9 @@ on if and how many plugins on your site use Redux Framework.
 |compiler|Flag setting the compiler option for the specified instance of Redux.|√|
 |output|Indicates if output flag for globally shutting off all CSS output is enabled for the specified instance of Redux.|√|
 |output_tag|The output_tag variable sets whether or not dynamic CSS will be generated for the customizer and Google fonts for this instance of Redux.|√|
-|template_path|The full directory path to custom template files for this instance of Redux.  This data is only displayed if the template_path argument is set.|/srv/www/wp-content/themes//redux/templates|
-|Templates|A list of custom templates used and their versions.  This data is only displayed if the template_path argument is set and templates are installed.|`/admin/templates/container.tpl.php`, <br/>`/admin/templates/content.tpl.php`, <br />`/admin/templates/footer.tpl.php`, <br />`/admin/templates/header.tpl.php`, <br />`/admin/templates/header_stickybar.tpl.php`, <br />`/admin/templates/menu_container.tpl.php`|
-|Extensions|A list of installed Redux Framework extensions and their versions.  This information is only displayed if extensions are installed.|Widget Areas - 1.0.0<br />Social Profiles - 1.0.2<br />Search - 1.0.0<br />Multi Media - 1.0.0<br />Metaboxes - 1.3.1<br />Js Button - 1.0.1<br />Custom Fonts - 1.0.1<br />Color Scheme - 2.1.6|
+|template_path|The full directory path to custom template files for this instance of Redux. This data is only displayed if the template_path argument is set.|/srv/www/wp-content/themes//redux/templates|
+|Templates|A list of custom templates used and their versions. This data is only displayed if the template_path argument is set and templates are installed.|`/admin/templates/container.tpl.php`,<br/>`/admin/templates/content.tpl.php`,<br />`/admin/templates/footer.tpl.php`,<br />`/admin/templates/header.tpl.php`,<br />`/admin/templates/header_stickybar.tpl.php`,<br />`/admin/templates/menu_container.tpl.php`|
+|Extensions|A list of installed Redux Framework extensions and their versions. This information is only displayed if extensions are installed.|Widget Areas - 1.0.0<br />Social Profiles - 1.0.2<br />Search - 1.0.0<br />Multi Media - 1.0.0<br />Metaboxes - 1.3.1<br />Js Button - 1.0.1<br />Custom Fonts - 1.0.1<br />Color Scheme - 2.1.6|
 
 ## Theme
 This section displays valuable information about the current theme running on your installation. Typically, this could be 
@@ -104,6 +104,6 @@ one of the more problematic areas of a site – as there is no standard on what 
 |Version|The installed version of the current active theme.|1.0.0|
 |Author URL|The developer or plugin’s URL|http://www.rdx.io|
 |Child Theme|Displays whether the active theme is a child theme, and what the parent theme is.|x|
-|Parent Theme Name|The name of the current parent theme.  This information is displayed only f the current theme is a child theme.|HelpBase (child theme)|
-|Parent Theme Version|The installed version of the parent theme.  This information is displayed only f the current theme is a child theme.|1.0.0|
-|Parent Theme Author URL|The parent's theme's developer or URL.  This information is displayed only f the current theme is a child theme.|http://www.rdx.io|
+|Parent Theme Name|The name of the current parent theme. This information is displayed only f the current theme is a child theme.|HelpBase (child theme)|
+|Parent Theme Version|The installed version of the parent theme. This information is displayed only f the current theme is a child theme.|1.0.0|
+|Parent Theme Author URL|The parent's theme's developer or URL. This information is displayed only f the current theme is a child theme.|http://www.rdx.io|

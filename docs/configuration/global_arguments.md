@@ -363,6 +363,10 @@ $args['share_icons'][] = array(
 
 Set whether Redux will display the Import/Export tab at the bottom of the options panel. Please note, if the Import / Export feature is used as a field, this tab will not display regardless of the value set to it.
 
+## templates_path
+
+Set the path to the [user defined templates](../guides/advanced/panel-templates.md) for the Redux options panel.
+
 ## transient_time
 **Default**: `60 * MINUTE_IN_SECONDS`
 
