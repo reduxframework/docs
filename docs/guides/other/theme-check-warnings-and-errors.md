@@ -9,19 +9,18 @@ Redux 4.x has been updated to solve a majority of the Warnings and Non-Errors. T
 :::
 
 ## Deleting Unneeded Files
-These files & directories are primarily for testing and development. If left in your submission it will be rejected.
+These files & directories are primarily for testing and development. If left in your submission, it will be rejected.
 
-- .tx/
-- bin/
-- tests/
+- .github/
+- codestyles/
 - .gitignore
 - .git/
+- .jshintignore
+- .jshintrc
 - .travis.yml
-- bootstrap_tests.php
-- phpunit.xml
-- node_modules/
-- .ds_store
-- codestyles/
+- composer.json
+- gulpfile.js
+- package-lock.json
 
 ## Warnings and Non-Errors
 With those items removed, you will get a few more errors yet. We’ll go over each of these.
@@ -39,6 +38,4 @@ False again. This is a regular expression. Disregard.
 ### WARNING: `file_put_contents / file_get_contents / curl_init / curl_exec` was found...
 These items are primarily fallback for when the `WP_Filesystem` 
 fails. And yes, it does fail on odd hosts.  These warning will not get you rejected. If they do, send the 
-reviewer this page, and you will make it through. You're free to read our blog post about this whole ordeal entitled: 
-[Sometimes Standards Don’t Always Work](https://redux.io/2014/07/sometimes-standards-dont-always-work/). It's 
-a real nail biter. ;)
+reviewer this page, and you will make it through.

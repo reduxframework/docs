@@ -30,10 +30,6 @@ module.exports = [
 				text: 'Changelog',
 				link: 'https://github.com/reduxframework/redux-framework/blob/master/CHANGELOG.md'
 			},
-			{
-				text: 'v3.x Docs',
-				link: 'http://docsv3.redux.io/'
-			},
 		]
 	}
 ]
