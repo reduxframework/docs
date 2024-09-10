@@ -12,11 +12,12 @@ through to see what suits your particular needs.
 :::
 
 ## Installing
-Redux must be installed to begin using it. The quickest approach is to install the WordPress.org plugin although other 
+Redux must be installed to begin using it. The quickest approach is to install the WordPress.org plugin, although other 
 approaches are available. [Read more in our install docs](install.md).
 
 ## Core Concepts
-Another great guide to review is our core concepts.  The Redux may be confusing without understanding how it's structured. [Read more in our core concepts docs](core-concepts.md)
+Another great guide to review is our core concepts.  The Redux may be confusing without understanding how it's structured. 
+[Read more in our core concepts docs](core-concepts.md)
 
 ## Basic Config
 Once Redux is installed, we can begin digging in. Let's begin with a basic config. The [barebones example](https://github.com/reduxframework/redux-framework/blob/master/sample/barebones-config.php) 

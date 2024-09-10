@@ -13,7 +13,7 @@ through to see what suits your particular needs.
 ## Downloading
   
 ### WordPress.org Plugin
-By using the Redux plugin, you can ensure your users will always be up-to-date with the most stable release.
+By using the Redux plugin, you can ensure your users will always be up to date with the most stable release.
 
 [WordPress.org Plugin](https://wordpress.org/plugins/redux-framework)
 
@@ -24,7 +24,7 @@ is highly active.  We work with the community to vet any changes or improvements
 [GitHub Repository](https://github.com/reduxframework/redux-framework/)
 
 ## Using Composer
-You're not a developer, you're a code jedi. You laugh at copy and paste! Why not try Composer and Redux. It will make 
+You're not a developer, you're a code jedi! You laugh at copy and paste! Why not try Composer and Redux. It will make 
 your development time that much easier.
 
 ### WP Packagist
@@ -57,7 +57,7 @@ These releases are often pre-release to WordPress.org. Although they are conside
 ```
 
 ### Repo Master Branch
-Go forth young Padawan. Do not underestimate the potential bugs of the master branch. :)
+Go forth, young Padawan. Do not underestimate the potential bugs of the master branch. :)
 
 ```json
 {
@@ -93,14 +93,12 @@ In this download, you'll find many more files than found in the plugin. It shoul
 
 ```text
 redux-framework/
-├── .tx/
-├── bin/
-├── code-styles/
+├── .github/
+├── codestyles/
 ├── redux-core/
 ├── sample/
     ├── sample-config.php
     ├── barebones-config.php
-├── tests/
 ```
 
 ::: danger Embedding the Redux repo will not pass approval
