@@ -13,7 +13,7 @@
     "@vuepress/plugin-pwa": "^1.8.2",
     "@vuepress/plugin-register-components": "^1.8.2",
     "vfg-field-array": "^0.0.6",
-    "vue": "^2.6.14",
+    "vue": "^3.0.0",
     "vue-form-generator": "^2.3.4",
     "vue-multiselect": "^2.1.6",
     "vuepress": "^1.8.2",
