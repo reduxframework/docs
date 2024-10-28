@@ -52,13 +52,18 @@ The group by values allows you to store all values within the repeater id value 
 as denoted below, and you set this to true. To access all the field values within the repeater field, you would need to follow the 
 Example Usage - Grouped Values example denoted below. This, by default, is turned off.
 
-::: danger Due to the unique way Redux stores data when setting this argument to true, `required` funcionality will fail on the first load of the 
+::: danger 
+Due to the unique way Redux stores data when setting this argument to true, `required` funcionality will fail on the first load of the 
 options panel.  If you intend to use `required` functionality in your repeater field, this argument is **NOT** recommended.
 :::
 
 #### The `sortable` Argument
 By default, each repeater block is sortable and the values will be returned to the developer in the order of which they are saved. However, 
 should a developer like to disable this feature, they may set this to false and sorting will be enabled to the user.
+
+::: warning
+The field `id` argument of fields inside the repeater **MUST** be unique. They cannot share names with other Redux fields or other fields inside other repeater instances, or they will not render properly.
+:::
 
 ## Example Config
 ```php
