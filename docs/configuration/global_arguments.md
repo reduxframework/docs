@@ -361,7 +361,12 @@ $args['share_icons'][] = array(
 ## show_import_export
 **Default**: `true`
 
-Set whether Redux will display the Import/Export tab at the bottom of the options panel. Please note, if the Import / Export feature is used as a field, this tab will not display regardless of the value set to it.
+Set whether Redux will display the Import/Export tab at the bottom of the options panel. Please note, if the Import / Export feature is used as a field, this tab will not display regardless of the value set.
+
+## show_options_object
+**Default**: `true`
+
+Adds a field to the bottom of the option panel that displays the current Redux options object in readable JSON format. Ideally for use in development only and should be shut off for deployment.
 
 ## templates_path
 
