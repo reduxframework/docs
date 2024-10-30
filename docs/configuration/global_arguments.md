@@ -327,6 +327,11 @@ Set the title to be displayed on the panel page.
 
 Set whether the default values are saved to the database on load before saving changes.
 
+## search
+**Default**: `true`
+
+Set weather the option search bar will appear at the top of the option panel/metabox interface.
+
 ## settings_api
 **Default**: `true`
 
