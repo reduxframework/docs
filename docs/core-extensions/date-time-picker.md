@@ -82,8 +82,8 @@ select a date-specific range at any point in the calendar.
 
 #### When `split` mode is set to `true`:
 
-<span style="display:block;text-align:center">![](img/dtp_split.png)</span>
-<span style="display:block;text-align:center">![](img/dtp_nosplit.png)</span>
+<span style="display:block;text-align:center">![](./img/dtp_split.png)</span>
+<span style="display:block;text-align:center">![](./img/dtp_nosplit.png)</span>
 
 ## Example Config
 ```php
