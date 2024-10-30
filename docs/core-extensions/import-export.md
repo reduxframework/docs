@@ -1,4 +1,4 @@
-# Import/Export
+# Import/Export <Badge text="field" type="warn"/>
 
 The Import/Export extension offers users the ability to back up and restore their Redux options data two ways: raw data or file.
 
