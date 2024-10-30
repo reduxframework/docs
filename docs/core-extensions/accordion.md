@@ -4,7 +4,7 @@ The Accordion extension is an improved way to group like items in your options p
 field. Such a feature comes in handy when a given options panel has many items that don't need to be shown 
 simultaneously. 
 
-<span style="display:block;text-align:center">![](img/accordion.png)</span>
+<span style="display:block;text-align:center">![](./img/accordion.png)</span>
 
 ::: warning Table of Contents
 [[toc]]
