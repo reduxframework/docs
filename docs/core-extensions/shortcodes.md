@@ -2,6 +2,10 @@
 
 Redux comes complete with a set of useful shortcodes for use in your theme or plugin.
 
+::: warning Table of Contents
+[[toc]]
+:::
+
 ::: warning
 Shortcode results will not appear in your option panel or on the backend due to Redux config loading on or before the `init` hook (if doing it properly.
 
