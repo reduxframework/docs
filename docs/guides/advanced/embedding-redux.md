@@ -4,8 +4,8 @@ title: "Embedding Redux"
 
 # Embedding Redux into Your Theme or Plugin
 
-::: danger Due to security concerns, we strongly discourage this method of using Redux without your projects.  We update our software monthly, which may 
-include pathes to plug security holes.  Unless you plan on updating Redux within your project regularly, the Redux plugin installed via [TGM](http://tgmpluginactivation.com/) is the 
+::: danger Due to security concerns, we strongly discourage this method of using Redux with your projects.  We update our software monthly, which may 
+include patches to plug security holes.  Unless you plan on updating Redux within your project regularly, the Redux plugin installed via [TGM](http://tgmpluginactivation.com/) is the 
 preferred method.
 :::
 
