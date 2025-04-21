@@ -28,7 +28,7 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "set NODE_OPTIONS= --openssl-legacy-provider && vuepress build docs && cp 404.md docs/.vuepress/dist/ && cp CNAME docs/.vuepress/dist/"
+    "docs:build": "set NODE_OPTIONS= --openssl-legacy-provider && vuepress build docs && cp 404.md docs/.vuepress/dist/ && cp CNAME docs/.vuepress/dist/ && cp -r docs/fonts docs/.vuepress/dist/ && cp -r docs/css docs/.vuepress/dist/"
   },
   "dependencies": {
     "bootstrap": "^5.0.2",
