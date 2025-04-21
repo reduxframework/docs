@@ -30,90 +30,90 @@ The Social Profile extension includes 82 default social profile icons from [Font
 
 <i class="fa fa-2xs fa-ad"></i>
 
-|Name| Icon                                                       |ID|
-|--- |------------------------------------------------------------|--|
-|ADN| <i name="adn" class="fa fa-2x fa-adn"></i>                 |adn|
-|Android| <i class="fa fa-2x fa-android"></i>                        |android|
-|Apple| <i class="fa fa-2x fa-apple"></i>                          |apple|
-|behance| <i class="fa fa-2x fa-behance"></i>                        |behance|
-|behance| <i class="fa fa-2x fa-behance-square"></i>  (square icon)  |behance-square|
-|Bitbucket| <i class="fa fa-2x fa-bitbucket"></i>                      |bitbucket|
-|Bitbucket (square icon)| <i class="fa fa-2x fa-bitbucket-square"></i>               |bitbucket-square|
-|Bitcoin| <i class="fa fa-2x fa-btc"></i>                            |bitcoin|
-|Codepen| <i class="fa fa-2x fa-codepen"></i>                        |codepen|
-|CSS3| <i class="fa fa-2x fa-css3"></i>                           |css3|
-|Delicious| <i class="fa fa-2x fa-delicious"></i>                      |delicious|
-|Deviantart| <i class="fa fa-2x fa-deviantart"></i>                     |deviantart|
-|Digg| <i class="fa fa-2x fa-digg"></i>                           |digg|
-|Dribbble| <i class="fa fa-2x fa-dribbble"></i>                       |dribbble|
-|Dropbox| <i class="fa fa-2x fa-dropbox"></i>                        |dropbox|
-|Drupal| <i class="fa fa-2x fa-drupal"></i>                         |drupal|
-|Empire| <i class="fa fa-2x fa-empire"></i>                         |empire|
-|Facebook| <i class="fa fa-2x fa-facebook"></i>                       |facebook|
-|Facebook| <i class="fa fa-2x fa-facebook-square"></i>  (square icon) |facebook-square|
-|Flickr| <i class="fa fa-2x fa-flickr"></i>                         |flickr|
-|FourSquare| <i class="fa fa-2x fa-foursquare"></i>                     |foursquare|
-|git| <i class="fa fa-2x fa-git"></i>                            |git|
-|git (square icon)| <i class="fa fa-2x fa-github-square"></i>                  |git-square|
-|github| <i class="fa fa-2x fa-github"></i>                         |github|
-|github alt| <i class="fa fa-2x fa-github-alt"></i>                     |github-alt|
-|github (square icon)| <i class="fa fa-2x fa-github-square"></i>                  |github-square|
-|git tip| <i class="fa fa-2x fa-gittip"></i>                         |gittip|
-|Google| <i class="fa fa-2x fa-google"></i>                         |google|
-|Google Plus| <i class="fa fa-2x fa-google-plus"></i>                    |google-plus|
-|Google Plus (square icon)| <i class="fa fa-2x fa-google-plus-square"></i>             |google-plus-square|
-|Hacker News| <i class="fa fa-2x fa-hacker-news"></i>                    |hacker-news|
-|HTML5| <i class="fa fa-2x fa-html5"></i>                          |html5|
-|Instagram| <i class="fa fa-2x fa-instagram"></i>                      |instagram|
-|Joomla| <i class="fa fa-2x fa-joomla"></i>                         |joomla|
-|JS Fiddle| <i class="fa fa-2x fa-jsfiddle"></i>                       |jsfiddle|
-|LinkedIn| <i class="fa fa-2x fa-linkedin"></i>                       |linkedin|
-|LinkedIn| <i class="fa fa-2x fa-linkedin-square"></i>  (square icon) |linkedin-square|
-|Linux| <i class="fa fa-2x fa-linux"></i>                          |linux|
-|Max CDN| <i class="fa fa-2x fa-maxcdn"></i>                         |maxcdn|
-|OpenID| <i class="fa fa-2x fa-openid"></i>                         |openid|
-|Page Lines| <i class="fa fa-2x fa-pagelines"></i>                      |pagelines|
-|Pied Piper| <i class="fa fa-2x fa-pied-piper"></i>                     |pied-piper|
-|Pied Piper alt| <i class="fa fa-2x fa-pied-piper-alt"></i>                 |pied-piper-alt|
-|Pinterest| <i class="fa fa-2x fa-pinterest"></i>                      |pinterest|
-|Pinterest (square icon)| <i class="fa fa-2x fa-pinterest-square"></i>               |pinterest-square|
-|QQ| <i class="fa fa-2x fa-qq"></i>                             |qq|
-|Rebel| <i class="fa fa-2x fa-rebel"></i>                          |rebel|
-|Reddit| <i class="fa fa-2x fa-reddit"></i>                         |reddit|
-|Reddit (square icon)| <i class="fa fa-2x fa-reddit-square"></i>                  |reddit-square|
-|Ren Ren| <i class="fa fa-2x fa-renren"></i>                         |renren|
-|Share alt| <i class="fa fa-2x fa-share-alt"></i>                      |share-alt|
-|Share (square icon)| <i class="fa fa-2x fa-share-alt-square"></i>               |share-alt-square|
-|Skype| <i class="fa fa-2x fa-skype"></i>                          |skype|
-|Slack| <i class="fa fa-2x fa-slack"></i>                          |slack|
-|Sound Cloud| <i class="fa fa-2x fa-soundcloud"></i>                     |soundcloud|
-|Spotify| <i class="fa fa-2x fa-spotify"></i>                        |spotify|
-|Stack Exchange| <i class="fa fa-2x fa-stack-exchange"></i>                 |stack-exchange|
-|Stack Overflow| <i class="fa fa-2x fa-stack-overflow"></i>                 |stack-overflow|
-|Steam| <i class="fa fa-2x fa-steam"></i>                          |steam|
-|Steam (square icon)| <i class="fa fa-2x fa-steam-square"></i>                   |steam-square|
-|Stumble Upon| <i class="fa fa-2x fa-stumbleupon"></i>                    |stumbleupon|
-|Stumble Upon (circle icon)| <i class="fa fa-2x fa-stumbleupon-circle"></i>             |stumbleupon-circle|
-|Tencent Weibo| <i class="fa fa-2x fa-tencent-weibo"></i>                  |tencent-weibo|
-|Trello| <i class="fa fa-2x fa-trello"></i>                         |trello|
-|Tumblr| <i class="fa fa-2x fa-tumblr"></i>                         |tumblr|
-|Tumblr (square icon)| <i class="fa fa-2x fa-tumblr-square"></i>                  |tumblr-square|
-|Twitter| <i class="fa-brands fa-2x fa-x-twitter"></i>               |twitter|
-|Twitter (square icon)| <i class="fa fa-2x fa-twitter-square"></i>                 |twitter-square|
-|Vimeo (square icon)| <i class="fa fa-2x fa-vimeo-square"></i>                   |vimeo-square|
-|Vine| <i class="fa fa-2x fa-vine"></i>                           |vine|
-|VK| <i class="fa fa-2x fa-vk"></i>                             |vk|
-|Weibo| <i class="fa fa-2x fa-weibo"></i>                          |weibo|
-|Weixin| <i class="fa fa-2x fa-weixin"></i>                         |weixin|
-|Windows| <i class="fa fa-2x fa-windows"></i>                        |windows|
-|WordPress| <i class="fa fa-2x fa-wordpress"></i>                      |wordpress|
-|Xing| <i class="fa fa-2x fa-xing"></i>                           |xing|
-|Xing (square icon)| <i class="fa fa-2x fa-xing-square"></i>                    |xing-square|
-|Yahoo| <i class="fa fa-2x fa-yahoo"></i>                          |yahoo|
-|Yelp| <i class="fa fa-2x fa-yelp"></i>                           |yelp|
-|YouTube| <i class="fa fa-2x fa-youtube"></i>                        |youtube|
-|YouTube (play icon)| <i class="fa fa-2x fa-youtube-play"></i>                   |youtube-play|
-|YouTube (square icon)| <i class="fa fa-2x fa-youtube-square"></i>                 |youtube-square|
+| Name                       | Icon                                                       | ID                 |
+|----------------------------|------------------------------------------------------------|--------------------|
+| ADN                        | <i name="adn" class="fa fa-2x fa-adn"></i>                 | adn                |
+| Android                    | <i class="fa fa-2x fa-android"></i>                        | android            |
+| Apple                      | <i class="fa fa-2x fa-apple"></i>                          | apple              |
+| behance                    | <i class="fa fa-2x fa-behance"></i>                        | behance            |
+| behance                    | <i class="fa fa-2x fa-behance-square"></i>  (square icon)  | behance-square     |
+| Bitbucket                  | <i class="fa fa-2x fa-bitbucket"></i>                      | bitbucket          |
+| Bitbucket (square icon)    | <i class="fa fa-2x fa-bitbucket-square"></i>               | bitbucket-square   |
+| Bitcoin                    | <i class="fa fa-2x fa-btc"></i>                            | bitcoin            |
+| Codepen                    | <i class="fa fa-2x fa-codepen"></i>                        | codepen            |
+| CSS3                       | <i class="fa fa-2x fa-css3"></i>                           | css3               |
+| Delicious                  | <i class="fa fa-2x fa-delicious"></i>                      | delicious          |
+| Deviantart                 | <i class="fa fa-2x fa-deviantart"></i>                     | deviantart         |
+| Digg                       | <i class="fa fa-2x fa-digg"></i>                           | digg               |
+| Dribbble                   | <i class="fa fa-2x fa-dribbble"></i>                       | dribbble           |
+| Dropbox                    | <i class="fa fa-2x fa-dropbox"></i>                        | dropbox            |
+| Drupal                     | <i class="fa fa-2x fa-drupal"></i>                         | drupal             |
+| Empire                     | <i class="fa fa-2x fa-empire"></i>                         | empire             |
+| Facebook                   | <i class="fa fa-2x fa-facebook"></i>                       | facebook           |
+| Facebook                   | <i class="fa fa-2x fa-facebook-square"></i>  (square icon) | facebook-square    |
+| Flickr                     | <i class="fa fa-2x fa-flickr"></i>                         | flickr             |
+| FourSquare                 | <i class="fa fa-2x fa-foursquare"></i>                     | foursquare         |
+| git                        | <i class="fa fa-2x fa-git"></i>                            | git                |
+| git (square icon)          | <i class="fa fa-2x fa-github-square"></i>                  | git-square         |
+| github                     | <i class="fa fa-2x fa-github"></i>                         | github             |
+| github alt                 | <i class="fa fa-2x fa-github-alt"></i>                     | github-alt         |
+| github (square icon)       | <i class="fa fa-2x fa-github-square"></i>                  | github-square      |
+| git tip                    | <i class="fa fa-2x fa-gittip"></i>                         | gittip             |
+| Google                     | <i class="fa fa-2x fa-google"></i>                         | google             |
+| Google Plus                | <i class="fa fa-2x fa-google-plus"></i>                    | google-plus        |
+| Google Plus (square icon)  | <i class="fa fa-2x fa-google-plus-square"></i>             | google-plus-square |
+| Hacker News                | <i class="fa fa-2x fa-hacker-news"></i>                    | hacker-news        |
+| HTML5                      | <i class="fa fa-2x fa-html5"></i>                          | html5              |
+| Instagram                  | <i class="fa fa-2x fa-instagram"></i>                      | instagram          |
+| Joomla                     | <i class="fa fa-2x fa-joomla"></i>                         | joomla             |
+| JS Fiddle                  | <i class="fa fa-2x fa-jsfiddle"></i>                       | jsfiddle           |
+| LinkedIn                   | <i class="fa fa-2x fa-linkedin"></i>                       | linkedin           |
+| LinkedIn                   | <i class="fa fa-2x fa-linkedin-square"></i>  (square icon) | linkedin-square    |
+| Linux                      | <i class="fa fa-2x fa-linux"></i>                          | linux              |
+| Max CDN                    | <i class="fa fa-2x fa-maxcdn"></i>                         | maxcdn             |
+| OpenID                     | <i class="fa fa-2x fa-openid"></i>                         | openid             |
+| Page Lines                 | <i class="fa fa-2x fa-pagelines"></i>                      | pagelines          |
+| Pied Piper                 | <i class="fa fa-2x fa-pied-piper"></i>                     | pied-piper         |
+| Pied Piper alt             | <i class="fa fa-2x fa-pied-piper-alt"></i>                 | pied-piper-alt     |
+| Pinterest                  | <i class="fa fa-2x fa-pinterest"></i>                      | pinterest          |
+| Pinterest (square icon)    | <i class="fa fa-2x fa-pinterest-square"></i>               | pinterest-square   |
+| QQ                         | <i class="fa fa-2x fa-qq"></i>                             | qq                 |
+| Rebel                      | <i class="fa fa-2x fa-rebel"></i>                          | rebel              |
+| Reddit                     | <i class="fa fa-2x fa-reddit"></i>                         | reddit             |
+| Reddit (square icon)       | <i class="fa fa-2x fa-reddit-square"></i>                  | reddit-square      |
+| Ren Ren                    | <i class="fa fa-2x fa-renren"></i>                         | renren             |
+| Share alt                  | <i class="fa fa-2x fa-share-alt"></i>                      | share-alt          |
+| Share (square icon)        | <i class="fa fa-2x fa-share-alt-square"></i>               | share-alt-square   |
+| Skype                      | <i class="fa fa-2x fa-skype"></i>                          | skype              |
+| Slack                      | <i class="fa fa-2x fa-slack"></i>                          | slack              |
+| Sound Cloud                | <i class="fa fa-2x fa-soundcloud"></i>                     | soundcloud         |
+| Spotify                    | <i class="fa fa-2x fa-spotify"></i>                        | spotify            |
+| Stack Exchange             | <i class="fa fa-2x fa-stack-exchange"></i>                 | stack-exchange     |
+| Stack Overflow             | <i class="fa fa-2x fa-stack-overflow"></i>                 | stack-overflow     |
+| Steam                      | <i class="fa fa-2x fa-steam"></i>                          | steam              |
+| Steam (square icon)        | <i class="fa fa-2x fa-steam-square"></i>                   | steam-square       |
+| Stumble Upon               | <i class="fa fa-2x fa-stumbleupon"></i>                    | stumbleupon        |
+| Stumble Upon (circle icon) | <i class="fa fa-2x fa-stumbleupon-circle"></i>             | stumbleupon-circle |
+| Tencent Weibo              | <i class="fa fa-2x fa-tencent-weibo"></i>                  | tencent-weibo      |
+| Trello                     | <i class="fa fa-2x fa-trello"></i>                         | trello             |
+| Tumblr                     | <i class="fa fa-2x fa-tumblr"></i>                         | tumblr             |
+| Tumblr (square icon)       | <i class="fa fa-2x fa-tumblr-square"></i>                  | tumblr-square      |
+| Twitter                    | <i class="fa-brands fa-2x fa-x-twitter"></i>               | twitter            |
+| Twitter (square icon)      | <i class="fa fa-2x fa-square-x-twitter"></i>               | twitter-square     |
+| Vimeo (square icon)        | <i class="fa fa-2x fa-vimeo-square"></i>                   | vimeo-square       |
+| Vine                       | <i class="fa fa-2x fa-vine"></i>                           | vine               |
+| VK                         | <i class="fa fa-2x fa-vk"></i>                             | vk                 |
+| Weibo                      | <i class="fa fa-2x fa-weibo"></i>                          | weibo              |
+| Weixin                     | <i class="fa fa-2x fa-weixin"></i>                         | weixin             |
+| Windows                    | <i class="fa fa-2x fa-windows"></i>                        | windows            |
+| WordPress                  | <i class="fa fa-2x fa-wordpress"></i>                      | wordpress          |
+| Xing                       | <i class="fa fa-2x fa-xing"></i>                           | xing               |
+| Xing (square icon)         | <i class="fa fa-2x fa-xing-square"></i>                    | xing-square        |
+| Yahoo                      | <i class="fa fa-2x fa-yahoo"></i>                          | yahoo              |
+| Yelp                       | <i class="fa fa-2x fa-yelp"></i>                           | yelp               |
+| YouTube                    | <i class="fa fa-2x fa-youtube"></i>                        | youtube            |
+| YouTube (play icon)        | <i class="fa fa-2x fa-youtube-play"></i>                   | youtube-play       |
+| YouTube (square icon)      | <i class="fa fa-2x fa-youtube-square"></i>                 | youtube-square     |
 
 By default, the extension offers all 82 to the user.  This doesn't mean you must offer each one.  Using the `include` argument, you may specify which profile icons you'd prefer to offer by assigning an array of existing icons IDs.  For example, let's say you'd like to offer only Facebook, Twitter, LinkedIn, and Google Plus.  The `include` argument would look as follows:
 
@@ -127,16 +127,17 @@ array(
 
 It's easy to add additional (or edit existing) social profile icons.  Each profile contains the following arguments:
 
-|Name|Type|Default|Description|
-|--- |--- |--- |--- |
-|id|string||Unique id of the profile.|
-|icon|string||Font Awesome icon class (cheatsheet) of the icon to display.  Icon classes from other sets may be used, provided the icon set is properly installed and enqueued.|
-|enabled|bool|`false`|Flag to set the default state of the social profile.|
-|name|string||Display name of the social profile|
-|color|string||Hex or RGBA string of the icons color.|
-|background|string||Hex or RGBA string of the icons backcolor.|
-|label|string||Link URL|Optional.  Text to appear over the URL input box.  This is useful should you want to specify a user name instead of a full URL.|
-|url|string||Optional. URL of the social profile.|
+| Name       |Type|Default| Description                                                                                                                                                            |
+|------------|--- |--- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id         |string|| Unique id of the profile.                                                                                                                                              |
+| icon       |string|| Font Awesome icon class (cheatsheet) of the icon to display.  Icon classes from other sets may be used, provided the icon set is properly installed and enqueued.      |
+| class      |string|| Font Awesome icon set classs of the icon to display.|
+| enabled    |bool|`false`| Flag to set the default state of the social profile.                                                                                                                   |
+| name       |string|| Display name of the social profile                                                                                                                                     |
+| color      |string|| Hex or RGBA string of the icons color.                                                                                                                                 |
+| background |string|| Hex or RGBA string of the icons backcolor.                                                                                                                             |
+| label      |string|| Link URL                                                                                                                                                               |Optional.  Text to appear over the URL input box.  This is useful should you want to specify a user name instead of a full URL.|
+| url        |string|| Optional. URL of the social profile.                                                                                                                                   |
 
 
 The following example would add a PayPal profile to the social profile icon set:
@@ -146,6 +147,7 @@ The following example would add a PayPal profile to the social profile icon set:
     array (
         'id'         => 'paypal',
         'icon'       => 'fa-paypal',
+        'class'      => 'fa-brands',
         'enabled'    => false,
         'name'       => __ ( 'PayPal', 'your-textdomain-here' ),
         'background' => '',
@@ -161,6 +163,7 @@ The `icons` argument may also be used to edit profiles from the default set.  In
 'icons' => array(
     array (
         'id'      => 'apple',
+        'class'   => 'fa-brands',
         'enabled' => true,
         'name'    => esc_html__( 'CrApple', 'your-textdomain-here' ),
         'label'   => 'Enter username:',
@@ -195,6 +198,7 @@ foreach ( $redux_demo['opt-social-profiles'] as $idx => $arr ) {
     echo 'Profile ID: ' . $arr['id'];
     echo 'Enabled: '    . $arr['enabled'];
     echo 'Icon: '       . $arr['icon'];
+    echo 'Icon: '       . $arr['class'];
     echo 'Name: '       . $arr['name'];
     echo 'URL: '        . $arr['url'];
     echo 'Color: '      . $arr['color'];
@@ -205,9 +209,10 @@ foreach ( $redux_demo['opt-social-profiles'] as $idx => $arr ) {
 foreach ( $redux_demo['opt-social-profiles'] as $idx => $arr ) {
     if ( isset( $arr['enabled'] ) && !empty( $arr['enabled'] ) ) {
         $id     = $arr['id'];
+        $id     = $arr['class'];
         $url    = $arr['url'];
         $icons .= '';
-        $icons .= '</pre><ul><li class="' . $id . '"><a href="' . esc_attr( esc_url( $url ) ) . '" target="_blank"><i class="' . esc_attr( $arr['icon'] ) . '"></i></a></li></ul><pre>';
+        $icons .= '</pre><ul><li class="' . $class . ' ' . $id . '"><a href="' . esc_attr( esc_url( $url ) ) . '" target="_blank"><i class="' . esc_attr( $arr['icon'] ) . '"></i></a></li></ul><pre>';
     }
 
     $output = '</pre><ul class="icons">';
@@ -258,11 +263,11 @@ This function returns the specified value data of the specified social profile I
 
 **Function Parameters in Order**
 
-|Parameter|Description|
-|--|--|
-|[opt_name](../configuration/global_arguments.md#opt-name)|Required. The [opt_name](../configuration/global_arguments.md#opt-name) specified in your arguments|
-|id|Required. ID of the social profile field whose information is to be rendered.|
-|value|Required. Value of the social profile for which whose data you would like returned.  Value options include `id`, `icon`, `enabled`, `name`, `color`, `background`, `label`, or `url`.|
+|Parameter| Description                                                                                                                                                                                   |
+|--|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|[opt_name](../configuration/global_arguments.md#opt-name)| Required. The [opt_name](../configuration/global_arguments.md#opt-name) specified in your arguments                                                                                           |
+|id| Required. ID of the social profile field whose information is to be rendered.                                                                                                                 |
+|value| Required. Value of the social profile for which whose data you would like returned.  Value options include `id`, `icon`, `class`, `enabled`, `name`, `color`, `background`, `label`, or `url`. |
 
 #### Usage
 
